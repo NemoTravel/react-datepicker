@@ -33,6 +33,15 @@ export default class Day extends React.Component {
     utcOffset: PropTypes.number
   }
 
+  shouldComponentUpdate (nextProps) {
+    return !this.props.day.isSame(nextProps.day) ||
+      this.props.dayClassName !== nextProps.dayClassName ||
+      this.props.highlightDates !== nextProps.highlightDates ||
+      this.props.inline !== nextProps.inline ||
+      this.props.month !== nextProps.month ||
+      this.props.utcOffset !== nextProps.utcOffset
+  }
+
   handleClick = (event) => {
     if (!this.isDisabled() && this.props.onClick) {
       this.props.onClick(event)
@@ -53,7 +62,7 @@ export default class Day extends React.Component {
   isDisabled = () => isDayDisabled(this.props.day, this.props)
 
   getHighLightedClass = (defaultClassName) => {
-    const { day, highlightDates } = this.props
+    const {day, highlightDates} = this.props
 
     if (!highlightDates) {
       return {[defaultClassName]: false}
@@ -83,7 +92,7 @@ export default class Day extends React.Component {
   }
 
   isInRange = () => {
-    const { day, startDate, endDate } = this.props
+    const {day, startDate, endDate} = this.props
     if (!startDate || !endDate) {
       return false
     }
@@ -91,7 +100,7 @@ export default class Day extends React.Component {
   }
 
   isInSelectingRange = () => {
-    const { day, selectsStart, selectsEnd, selectingDate, startDate, endDate } = this.props
+    const {day, selectsStart, selectsEnd, selectingDate, startDate, endDate} = this.props
 
     if (!(selectsStart || selectsEnd) || !selectingDate || this.isDisabled()) {
       return false
@@ -113,7 +122,7 @@ export default class Day extends React.Component {
       return false
     }
 
-    const { day, selectingDate, startDate, selectsStart } = this.props
+    const {day, selectingDate, startDate, selectsStart} = this.props
 
     if (selectsStart) {
       return isSameDay(day, selectingDate)
@@ -127,7 +136,7 @@ export default class Day extends React.Component {
       return false
     }
 
-    const { day, selectingDate, endDate, selectsEnd } = this.props
+    const {day, selectingDate, endDate, selectsEnd} = this.props
 
     if (selectsEnd) {
       return isSameDay(day, selectingDate)
@@ -137,7 +146,7 @@ export default class Day extends React.Component {
   }
 
   isRangeStart = () => {
-    const { day, startDate, endDate } = this.props
+    const {day, startDate, endDate} = this.props
     if (!startDate || !endDate) {
       return false
     }
@@ -145,7 +154,7 @@ export default class Day extends React.Component {
   }
 
   isRangeEnd = () => {
-    const { day, startDate, endDate } = this.props
+    const {day, startDate, endDate} = this.props
     if (!startDate || !endDate) {
       return false
     }

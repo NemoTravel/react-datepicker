@@ -57612,6 +57612,11 @@
 	  }
 
 	  _createClass(Day, [{
+	    key: 'shouldComponentUpdate',
+	    value: function shouldComponentUpdate(nextProps) {
+	      return !this.props.day.isSame(nextProps.day) || this.props.dayClassName !== nextProps.dayClassName || this.props.highlightDates !== nextProps.highlightDates || this.props.inline !== nextProps.inline || this.props.month !== nextProps.month || this.props.utcOffset !== nextProps.utcOffset;
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
