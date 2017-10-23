@@ -39299,6 +39299,11 @@
 	      }
 	    }
 	  }, {
+	    key: 'shouldComponentUpdate',
+	    value: function shouldComponentUpdate(nextProps, nextState) {
+	      return this.props.className !== nextProps.className || (0, _date_utils.compareDates)(this.props.minDate, nextProps.minDate) || (0, _date_utils.compareDates)(this.props.openToDate, nextProps.openToDate) || (0, _date_utils.compareDates)(this.props.maxDate, nextProps.maxDate) || (0, _date_utils.compareDates)(this.props.selected, nextProps.selected) || (0, _date_utils.compareArrays)(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.fixedHeight !== nextProps.fixedHeight || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.peekNextMonth !== nextProps.peekNextMonth || this.props.utcOffset !== nextProps.utcOffset || this.props.locale !== nextProps.locale || this.props.monthsShown !== nextProps.monthsShown || this.props.forceShowMonthNavigation !== nextProps.forceShowMonthNavigation || this.props.showTimeSelect !== nextProps.showTimeSelect || this.props.timeFormat !== nextProps.timeFormat || this.props.timeIntervals !== nextProps.timeIntervals || this.props.scrollableYearDropdown !== nextProps.scrollableYearDropdown || this.props.showMonthDropdown !== nextProps.showMonthDropdown || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.showYearDropdown !== nextProps.showYearDropdown || this.props.todayButton !== nextProps.todayButton || this.props.useWeekdaysShort !== nextProps.useWeekdaysShort || this.props.withPortal !== nextProps.withPortal || this.props.weekLabel !== nextProps.weekLabel || this.props.yearDropdownItemNumber !== nextProps.yearDropdownItemNumber || (0, _date_utils.compareDates)(this.state.selectingDate, nextState.selectingDate) || (0, _date_utils.compareDates)(this.state.date, nextState.date) || (0, _date_utils.compareDates)(this.state.monthContainer, nextState.monthContainer);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -40146,7 +40151,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.compareArrays = exports.checkDates = undefined;
+	exports.compareArrays = exports.compareDates = undefined;
 	exports.newDate = newDate;
 	exports.newDateWithOffset = newDateWithOffset;
 	exports.now = now;
@@ -40627,10 +40632,10 @@
 	  }
 	}
 
-	var checkDates = exports.checkDates = function checkDates(prevDate, nextDate) {
+	var compareDates = exports.compareDates = function compareDates(prevDate, nextDate) {
 	  if (!prevDate && !nextDate) return false;
 	  if (prevDate && !nextDate || !prevDate && nextDate) return true;
-	  return prevDate && nextDate && !prevDate.isSame(nextDate);
+	  return prevDate && nextDate && prevDate.isSame && !prevDate.isSame(nextDate);
 	};
 
 	var compareArrays = exports.compareArrays = function compareArrays(prevArray, nextArray) {
@@ -57229,6 +57234,11 @@
 	  }
 
 	  _createClass(Month, [{
+	    key: 'shouldComponentUpdate',
+	    value: function shouldComponentUpdate(nextProps) {
+	      return !this.props.day.isSame(nextProps.day) || utils.compareDates(this.props.minDate, nextProps.minDate) || utils.compareDates(this.props.maxDate, nextProps.maxDate) || utils.compareDates(this.props.selected, nextProps.selected) || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.fixedHeight !== nextProps.fixedHeight || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.peekNextMonth !== nextProps.peekNextMonth || this.props.utcOffset !== nextProps.utcOffset;
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -57383,7 +57393,7 @@
 	  _createClass(Week, [{
 	    key: 'shouldComponentUpdate',
 	    value: function shouldComponentUpdate(nextProps) {
-	      return !this.props.day.isSame(nextProps.day) || this.props.month !== nextProps.month || utils.checkDates(this.props.minDate, nextProps.minDate) || utils.checkDates(this.props.maxDate, nextProps.maxDate) || utils.checkDates(this.props.selected, nextProps.selected) || utils.checkDates(this.props.startDate, nextProps.startDate) || this.props.dayClassName !== nextProps.dayClassName || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.inline !== nextProps.inline || this.props.showWeekNumber !== nextProps.showWeekNumber || this.props.utcOffset !== nextProps.utcOffset;
+	      return !this.props.day.isSame(nextProps.day) || this.props.month !== nextProps.month || utils.compareDates(this.props.minDate, nextProps.minDate) || utils.compareDates(this.props.maxDate, nextProps.maxDate) || utils.compareDates(this.props.selected, nextProps.selected) || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.showWeekNumber !== nextProps.showWeekNumber || this.props.utcOffset !== nextProps.utcOffset;
 	    }
 	  }, {
 	    key: 'render',
@@ -57637,7 +57647,7 @@
 	  _createClass(Day, [{
 	    key: 'shouldComponentUpdate',
 	    value: function shouldComponentUpdate(nextProps) {
-	      return !this.props.day.isSame(nextProps.day) || this.props.dayClassName !== nextProps.dayClassName || this.props.highlightDates !== nextProps.highlightDates || this.props.inline !== nextProps.inline || this.props.month !== nextProps.month || this.props.utcOffset !== nextProps.utcOffset;
+	      return (0, _date_utils.compareDates)(this.props.day, nextProps.day) || (0, _date_utils.compareDates)(this.props.selected, nextProps.selected) || (0, _date_utils.compareArrays)(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.month !== nextProps.month || this.props.utcOffset !== nextProps.utcOffset;
 	    }
 	  }, {
 	    key: 'render',

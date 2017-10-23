@@ -29,7 +29,9 @@ import {
   allDaysDisabledBefore,
   allDaysDisabledAfter,
   getEffectiveMinDate,
-  getEffectiveMaxDate
+  getEffectiveMaxDate,
+  compareArrays,
+  compareDates
 } from './date_utils'
 
 const DROPDOWN_FOCUS_CLASSNAMES = [
@@ -132,6 +134,39 @@ export default class Calendar extends React.Component {
         date: this.localizeDate(nextProps.openToDate)
       })
     }
+  }
+
+  shouldComponentUpdate (nextProps, nextState) {
+    return this.props.className !== nextProps.className ||
+      compareDates(this.props.minDate, nextProps.minDate) ||
+      compareDates(this.props.openToDate, nextProps.openToDate) ||
+      compareDates(this.props.maxDate, nextProps.maxDate) ||
+      compareDates(this.props.selected, nextProps.selected) ||
+      compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
+      this.props.dayClassName !== nextProps.dayClassName ||
+      this.props.inline !== nextProps.inline ||
+      this.props.fixedHeight !== nextProps.fixedHeight ||
+      this.props.showWeekNumbers !== nextProps.showWeekNumbers ||
+      this.props.peekNextMonth !== nextProps.peekNextMonth ||
+      this.props.utcOffset !== nextProps.utcOffset ||
+      this.props.locale !== nextProps.locale ||
+      this.props.monthsShown !== nextProps.monthsShown ||
+      this.props.forceShowMonthNavigation !== nextProps.forceShowMonthNavigation ||
+      this.props.showTimeSelect !== nextProps.showTimeSelect ||
+      this.props.timeFormat !== nextProps.timeFormat ||
+      this.props.timeIntervals !== nextProps.timeIntervals ||
+      this.props.scrollableYearDropdown !== nextProps.scrollableYearDropdown ||
+      this.props.showMonthDropdown !== nextProps.showMonthDropdown ||
+      this.props.showWeekNumbers !== nextProps.showWeekNumbers ||
+      this.props.showYearDropdown !== nextProps.showYearDropdown ||
+      this.props.todayButton !== nextProps.todayButton ||
+      this.props.useWeekdaysShort !== nextProps.useWeekdaysShort ||
+      this.props.withPortal !== nextProps.withPortal ||
+      this.props.weekLabel !== nextProps.weekLabel ||
+      this.props.yearDropdownItemNumber !== nextProps.yearDropdownItemNumber ||
+      compareDates(this.state.selectingDate, nextState.selectingDate) ||
+      compareDates(this.state.date, nextState.date) ||
+      compareDates(this.state.monthContainer, nextState.monthContainer)
   }
 
   handleClickOutside = (event) => {

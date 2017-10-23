@@ -38,8 +38,8 @@ export default class Day extends React.Component {
   shouldComponentUpdate (nextProps) {
     return compareDates(this.props.day, nextProps.day) ||
       compareDates(this.props.selected, nextProps.selected) ||
-      this.props.dayClassName !== nextProps.dayClassName ||
       compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
+      this.props.dayClassName !== nextProps.dayClassName ||
       this.props.inline !== nextProps.inline ||
       this.props.month !== nextProps.month ||
       this.props.utcOffset !== nextProps.utcOffset

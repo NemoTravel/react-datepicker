@@ -37,9 +37,8 @@ export default class Week extends React.Component {
       utils.compareDates(this.props.minDate, nextProps.minDate) ||
       utils.compareDates(this.props.maxDate, nextProps.maxDate) ||
       utils.compareDates(this.props.selected, nextProps.selected) ||
-      utils.compareDates(this.props.startDate, nextProps.startDate) ||
-      this.props.dayClassName !== nextProps.dayClassName ||
       utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
+      this.props.dayClassName !== nextProps.dayClassName ||
       this.props.inline !== nextProps.inline ||
       this.props.showWeekNumber !== nextProps.showWeekNumber ||
       this.props.utcOffset !== nextProps.utcOffset
