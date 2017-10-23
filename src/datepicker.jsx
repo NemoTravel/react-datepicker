@@ -35,6 +35,9 @@ import {
 } from './date_utils'
 import onClickOutside from 'react-onclickoutside'
 
+// const {whyDidYouUpdate} = require('why-did-you-update')
+// whyDidYouUpdate(React)
+
 const outsideClickIgnoreClass = 'react-datepicker-ignore-onclickoutside'
 const WrappedCalendar = onClickOutside(Calendar)
 

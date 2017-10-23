@@ -38389,6 +38389,9 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	// const {whyDidYouUpdate} = require('why-did-you-update')
+	// whyDidYouUpdate(React)
+
 	var outsideClickIgnoreClass = 'react-datepicker-ignore-onclickoutside';
 	var WrappedCalendar = (0, _reactOnclickoutside2.default)(_calendar2.default);
 
@@ -40143,6 +40146,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.compareArrays = exports.checkDates = undefined;
 	exports.newDate = newDate;
 	exports.newDateWithOffset = newDateWithOffset;
 	exports.now = now;
@@ -40622,6 +40626,20 @@
 	    return maxDate;
 	  }
 	}
+
+	var checkDates = exports.checkDates = function checkDates(prevDate, nextDate) {
+	  if (!prevDate && !nextDate) return false;
+	  if (prevDate && !nextDate || !prevDate && nextDate) return true;
+	  return prevDate && nextDate && !prevDate.isSame(nextDate);
+	};
+
+	var compareArrays = exports.compareArrays = function compareArrays(prevArray, nextArray) {
+	  if (!prevArray && !nextArray) return false;
+	  if (prevArray && !nextArray || !prevArray && nextArray) return true;
+	  return prevArray.length !== nextArray.length || !prevArray.every(function (v, i) {
+	    return v === nextArray[i];
+	  });
+	};
 
 /***/ }),
 /* 363 */
@@ -57363,6 +57381,11 @@
 	  }
 
 	  _createClass(Week, [{
+	    key: 'shouldComponentUpdate',
+	    value: function shouldComponentUpdate(nextProps) {
+	      return !this.props.day.isSame(nextProps.day) || this.props.month !== nextProps.month || utils.checkDates(this.props.minDate, nextProps.minDate) || utils.checkDates(this.props.maxDate, nextProps.maxDate) || utils.checkDates(this.props.selected, nextProps.selected) || utils.checkDates(this.props.startDate, nextProps.startDate) || this.props.dayClassName !== nextProps.dayClassName || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.inline !== nextProps.inline || this.props.showWeekNumber !== nextProps.showWeekNumber || this.props.utcOffset !== nextProps.utcOffset;
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(

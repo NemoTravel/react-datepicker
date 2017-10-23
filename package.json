@@ -28,6 +28,7 @@
     "url": "https://github.com/Hacker0x01/react-datepicker/issues"
   },
   "devDependencies": {
+    "@nemo.travel/why-did-you-update": "0.0.8",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.2.2",
     "babel-loader": "^6.2.10",

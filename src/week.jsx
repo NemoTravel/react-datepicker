@@ -31,6 +31,20 @@ export default class Week extends React.Component {
     utcOffset: PropTypes.number
   }
 
+  shouldComponentUpdate (nextProps) {
+    return !this.props.day.isSame(nextProps.day) ||
+      this.props.month !== nextProps.month ||
+      utils.checkDates(this.props.minDate, nextProps.minDate) ||
+      utils.checkDates(this.props.maxDate, nextProps.maxDate) ||
+      utils.checkDates(this.props.selected, nextProps.selected) ||
+      utils.checkDates(this.props.startDate, nextProps.startDate) ||
+      this.props.dayClassName !== nextProps.dayClassName ||
+      utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
+      this.props.inline !== nextProps.inline ||
+      this.props.showWeekNumber !== nextProps.showWeekNumber ||
+      this.props.utcOffset !== nextProps.utcOffset
+  }
+
   handleDayClick = (day, event) => {
     if (this.props.onDayClick) {
       this.props.onDayClick(day, event)

@@ -376,3 +376,15 @@ export function getEffectiveMaxDate ({ maxDate, includeDates }) {
     return maxDate
   }
 }
+
+export const checkDates = (prevDate, nextDate) => {
+  if (!prevDate && !nextDate) return false
+  if (prevDate && !nextDate || !prevDate && nextDate) return true
+  return prevDate && nextDate && !prevDate.isSame(nextDate)
+}
+
+export const compareArrays = (prevArray, nextArray) => {
+  if (!prevArray && !nextArray) return false
+  if (prevArray && !nextArray || !prevArray && nextArray) return true
+  return prevArray.length !== nextArray.length || !prevArray.every((v, i) => v === nextArray[i])
+}
