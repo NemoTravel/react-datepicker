@@ -82,28 +82,29 @@ export default class Week extends React.Component {
     return days.concat([0, 1, 2, 3, 4, 5, 6].map(offset => {
       const day = utils.addDays(utils.cloneDate(startOfWeek), offset)
       return (
-        <Day
-            key={offset}
-            day={day}
-            month={this.props.month}
-            onClick={this.handleDayClick.bind(this, day)}
-            onMouseEnter={this.handleDayMouseEnter.bind(this, day)}
-            minDate={this.props.minDate}
-            maxDate={this.props.maxDate}
-            excludeDates={this.props.excludeDates}
-            includeDates={this.props.includeDates}
-            inline={this.props.inline}
-            highlightDates={this.props.highlightDates}
-            selectingDate={this.props.selectingDate}
-            filterDate={this.props.filterDate}
-            preSelection={this.props.preSelection}
-            selected={this.props.selected}
-            selectsStart={this.props.selectsStart}
-            selectsEnd={this.props.selectsEnd}
-            startDate={this.props.startDate}
-            endDate={this.props.endDate}
-            dayClassName={this.props.dayClassName}
-            utcOffset={this.props.utcOffset}/>
+        Day({
+          key: offset,
+          day: day,
+          month: this.props.month,
+          onClick: this.handleDayClick.bind(this, day),
+          onMouseEnter: this.handleDayMouseEnter.bind(this, day),
+          minDate: this.props.minDate,
+          maxDate: this.props.maxDate,
+          excludeDates: this.props.excludeDates,
+          includeDates: this.props.includeDates,
+          inline: this.props.inline,
+          highlightDates: this.props.highlightDates,
+          selectingDate: this.props.selectingDate,
+          filterDate: this.props.filterDate,
+          preSelection: this.props.preSelection,
+          selected: this.props.selected,
+          selectsStart: this.props.selectsStart,
+          selectsEnd: this.props.selectsEnd,
+          startDate: this.props.startDate,
+          endDate: this.props.endDate,
+          dayClassName: this.props.dayClassName,
+          utcOffset: this.props.utcOffset
+        })
       )
     }))
   }

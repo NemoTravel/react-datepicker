@@ -57364,7 +57364,7 @@
 	      }
 	      return days.concat([0, 1, 2, 3, 4, 5, 6].map(function (offset) {
 	        var day = utils.addDays(utils.cloneDate(startOfWeek), offset);
-	        return _react2.default.createElement(_day2.default, {
+	        return (0, _day2.default)({
 	          key: offset,
 	          day: day,
 	          month: _this.props.month,
@@ -57385,7 +57385,8 @@
 	          startDate: _this.props.startDate,
 	          endDate: _this.props.endDate,
 	          dayClassName: _this.props.dayClassName,
-	          utcOffset: _this.props.utcOffset });
+	          utcOffset: _this.props.utcOffset
+	        });
 	      }));
 	    }, _temp), _possibleConstructorReturn(_this, _ret);
 	  }
@@ -57448,8 +57449,6 @@
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -57468,213 +57467,204 @@
 
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	var Day = function Day(props) {
+	  var handleClick = function handleClick(event) {
+	    if (!isDisabled() && props.onClick) {
+	      props.onClick(event);
+	    }
+	  };
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	  var handleMouseEnter = function handleMouseEnter(event) {
+	    if (!isDisabled() && props.onMouseEnter) {
+	      props.onMouseEnter(event);
+	    }
+	  };
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	  var isSameDay = function isSameDay(other) {
+	    return (0, _date_utils.isSameDay)(props.day, other);
+	  };
 
-	var Day = function (_React$Component) {
-	  _inherits(Day, _React$Component);
+	  var isKeyboardSelected = function isKeyboardSelected() {
+	    return !props.inline && !isSameDay(props.selected) && isSameDay(props.preSelection);
+	  };
 
-	  function Day() {
-	    var _ref;
+	  var isDisabled = function isDisabled() {
+	    return (0, _date_utils.isDayDisabled)(props.day, props);
+	  };
 
-	    var _temp, _this, _ret;
+	  var getHighLightedClass = function getHighLightedClass(defaultClassName) {
+	    var day = props.day,
+	        highlightDates = props.highlightDates;
 
-	    _classCallCheck(this, Day);
 
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
+	    if (!highlightDates) {
+	      return _defineProperty({}, defaultClassName, false);
 	    }
 
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Day.__proto__ || Object.getPrototypeOf(Day)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function (event) {
-	      if (!_this.isDisabled() && _this.props.onClick) {
-	        _this.props.onClick(event);
-	      }
-	    }, _this.handleMouseEnter = function (event) {
-	      if (!_this.isDisabled() && _this.props.onMouseEnter) {
-	        _this.props.onMouseEnter(event);
-	      }
-	    }, _this.isSameDay = function (other) {
-	      return (0, _date_utils.isSameDay)(_this.props.day, other);
-	    }, _this.isKeyboardSelected = function () {
-	      return !_this.props.inline && !_this.isSameDay(_this.props.selected) && _this.isSameDay(_this.props.preSelection);
-	    }, _this.isDisabled = function () {
-	      return (0, _date_utils.isDayDisabled)(_this.props.day, _this.props);
-	    }, _this.getHighLightedClass = function (defaultClassName) {
-	      var _this$props = _this.props,
-	          day = _this$props.day,
-	          highlightDates = _this$props.highlightDates;
-
-
-	      if (!highlightDates) {
-	        return _defineProperty({}, defaultClassName, false);
-	      }
-
-	      var classNames = {};
-	      for (var i = 0, len = highlightDates.length; i < len; i++) {
-	        var obj = highlightDates[i];
-	        if ((0, _date_utils.isMoment)(obj)) {
-	          if ((0, _date_utils.isSameDay)(day, obj)) {
-	            classNames[defaultClassName] = true;
-	          }
-	        } else if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === 'object') {
-	          var keys = Object.keys(obj);
-	          var arr = obj[keys[0]];
-	          if (typeof keys[0] === 'string' && arr.constructor === Array) {
-	            for (var k = 0, _len2 = arr.length; k < _len2; k++) {
-	              if ((0, _date_utils.isSameDay)(day, arr[k])) {
-	                classNames[keys[0]] = true;
-	              }
+	    var classNames = {};
+	    for (var i = 0, len = highlightDates.length; i < len; i++) {
+	      var obj = highlightDates[i];
+	      if ((0, _date_utils.isMoment)(obj)) {
+	        if (isSameDay(day, obj)) {
+	          classNames[defaultClassName] = true;
+	        }
+	      } else if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === 'object') {
+	        var keys = Object.keys(obj);
+	        var arr = obj[keys[0]];
+	        if (typeof keys[0] === 'string' && arr.constructor === Array) {
+	          for (var k = 0, _len = arr.length; k < _len; k++) {
+	            if (isSameDay(day, arr[k])) {
+	              classNames[keys[0]] = true;
 	            }
 	          }
 	        }
 	      }
+	    }
 
-	      return classNames;
-	    }, _this.isInRange = function () {
-	      var _this$props2 = _this.props,
-	          day = _this$props2.day,
-	          startDate = _this$props2.startDate,
-	          endDate = _this$props2.endDate;
+	    return classNames;
+	  };
 
-	      if (!startDate || !endDate) {
-	        return false;
-	      }
-	      return (0, _date_utils.isDayInRange)(day, startDate, endDate);
-	    }, _this.isInSelectingRange = function () {
-	      var _this$props3 = _this.props,
-	          day = _this$props3.day,
-	          selectsStart = _this$props3.selectsStart,
-	          selectsEnd = _this$props3.selectsEnd,
-	          selectingDate = _this$props3.selectingDate,
-	          startDate = _this$props3.startDate,
-	          endDate = _this$props3.endDate;
+	  var isInRange = function isInRange() {
+	    var day = props.day,
+	        startDate = props.startDate,
+	        endDate = props.endDate;
 
-
-	      if (!(selectsStart || selectsEnd) || !selectingDate || _this.isDisabled()) {
-	        return false;
-	      }
-
-	      if (selectsStart && endDate && selectingDate.isSameOrBefore(endDate)) {
-	        return (0, _date_utils.isDayInRange)(day, selectingDate, endDate);
-	      }
-
-	      if (selectsEnd && startDate && selectingDate.isSameOrAfter(startDate)) {
-	        return (0, _date_utils.isDayInRange)(day, startDate, selectingDate);
-	      }
-
+	    if (!startDate || !endDate) {
 	      return false;
-	    }, _this.isSelectingRangeStart = function () {
-	      if (!_this.isInSelectingRange()) {
-	        return false;
-	      }
-
-	      var _this$props4 = _this.props,
-	          day = _this$props4.day,
-	          selectingDate = _this$props4.selectingDate,
-	          startDate = _this$props4.startDate,
-	          selectsStart = _this$props4.selectsStart;
-
-
-	      if (selectsStart) {
-	        return (0, _date_utils.isSameDay)(day, selectingDate);
-	      } else {
-	        return (0, _date_utils.isSameDay)(day, startDate);
-	      }
-	    }, _this.isSelectingRangeEnd = function () {
-	      if (!_this.isInSelectingRange()) {
-	        return false;
-	      }
-
-	      var _this$props5 = _this.props,
-	          day = _this$props5.day,
-	          selectingDate = _this$props5.selectingDate,
-	          endDate = _this$props5.endDate,
-	          selectsEnd = _this$props5.selectsEnd;
-
-
-	      if (selectsEnd) {
-	        return (0, _date_utils.isSameDay)(day, selectingDate);
-	      } else {
-	        return (0, _date_utils.isSameDay)(day, endDate);
-	      }
-	    }, _this.isRangeStart = function () {
-	      var _this$props6 = _this.props,
-	          day = _this$props6.day,
-	          startDate = _this$props6.startDate,
-	          endDate = _this$props6.endDate;
-
-	      if (!startDate || !endDate) {
-	        return false;
-	      }
-	      return (0, _date_utils.isSameDay)(startDate, day);
-	    }, _this.isRangeEnd = function () {
-	      var _this$props7 = _this.props,
-	          day = _this$props7.day,
-	          startDate = _this$props7.startDate,
-	          endDate = _this$props7.endDate;
-
-	      if (!startDate || !endDate) {
-	        return false;
-	      }
-	      return (0, _date_utils.isSameDay)(endDate, day);
-	    }, _this.isWeekend = function () {
-	      var weekday = (0, _date_utils.getDay)(_this.props.day);
-	      return weekday === 0 || weekday === 6;
-	    }, _this.isOutsideMonth = function () {
-	      return _this.props.month !== undefined && _this.props.month !== (0, _date_utils.getMonth)(_this.props.day);
-	    }, _this.getClassNames = function (date) {
-	      var dayClassName = _this.props.dayClassName ? _this.props.dayClassName(date) : undefined;
-	      return (0, _classnames2.default)('react-datepicker__day', dayClassName, 'react-datepicker__day--' + (0, _date_utils.getDayOfWeekCode)(_this.props.day), {
-	        'react-datepicker__day--disabled': _this.isDisabled(),
-	        'react-datepicker__day--selected': _this.isSameDay(_this.props.selected),
-	        'react-datepicker__day--keyboard-selected': _this.isKeyboardSelected(),
-	        'react-datepicker__day--range-start': _this.isRangeStart(),
-	        'react-datepicker__day--range-end': _this.isRangeEnd(),
-	        'react-datepicker__day--in-range': _this.isInRange(),
-	        'react-datepicker__day--in-selecting-range': _this.isInSelectingRange(),
-	        'react-datepicker__day--selecting-range-start': _this.isSelectingRangeStart(),
-	        'react-datepicker__day--selecting-range-end': _this.isSelectingRangeEnd(),
-	        'react-datepicker__day--today': _this.isSameDay((0, _date_utils.now)(_this.props.utcOffset)),
-	        'react-datepicker__day--weekend': _this.isWeekend(),
-	        'react-datepicker__day--outside-month': _this.isOutsideMonth()
-	      }, _this.getHighLightedClass('react-datepicker__day--highlighted'));
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
-	  }
-
-	  _createClass(Day, [{
-	    key: 'shouldComponentUpdate',
-	    value: function shouldComponentUpdate(nextProps) {
-	      return (0, _date_utils.compareDates)(this.props.day, nextProps.day) || (0, _date_utils.compareDates)(this.props.selected, nextProps.selected) || (0, _date_utils.compareArrays)(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.month !== nextProps.month || this.props.utcOffset !== nextProps.utcOffset;
 	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        {
-	          className: this.getClassNames(this.props.day),
-	          onClick: this.handleClick,
-	          onMouseEnter: this.handleMouseEnter,
-	          'aria-label': 'day-' + (0, _date_utils.getDate)(this.props.day),
-	          role: 'option' },
-	        (0, _date_utils.getDate)(this.props.day)
-	      );
+	    return (0, _date_utils.isDayInRange)(day, startDate, endDate);
+	  };
+
+	  var isInSelectingRange = function isInSelectingRange() {
+	    var day = props.day,
+	        selectsStart = props.selectsStart,
+	        selectsEnd = props.selectsEnd,
+	        selectingDate = props.selectingDate,
+	        startDate = props.startDate,
+	        endDate = props.endDate;
+
+
+	    if (!(selectsStart || selectsEnd) || !selectingDate || isDisabled()) {
+	      return false;
 	    }
-	  }]);
 
-	  return Day;
-	}(_react2.default.Component);
+	    if (selectsStart && endDate && selectingDate.isSameOrBefore(endDate)) {
+	      return (0, _date_utils.isDayInRange)(day, selectingDate, endDate);
+	    }
 
-	Day.propTypes = {
+	    if (selectsEnd && startDate && selectingDate.isSameOrAfter(startDate)) {
+	      return (0, _date_utils.isDayInRange)(day, startDate, selectingDate);
+	    }
+
+	    return false;
+	  };
+
+	  var isSelectingRangeStart = function isSelectingRangeStart() {
+	    if (!isInSelectingRange()) {
+	      return false;
+	    }
+
+	    var day = props.day,
+	        selectingDate = props.selectingDate,
+	        startDate = props.startDate,
+	        selectsStart = props.selectsStart;
+
+
+	    if (selectsStart) {
+	      return isSameDay(day, selectingDate);
+	    } else {
+	      return isSameDay(day, startDate);
+	    }
+	  };
+
+	  var isSelectingRangeEnd = function isSelectingRangeEnd() {
+	    if (!isInSelectingRange()) {
+	      return false;
+	    }
+
+	    var day = props.day,
+	        selectingDate = props.selectingDate,
+	        endDate = props.endDate,
+	        selectsEnd = props.selectsEnd;
+
+
+	    if (selectsEnd) {
+	      return isSameDay(day, selectingDate);
+	    } else {
+	      return isSameDay(day, endDate);
+	    }
+	  };
+
+	  var isRangeStart = function isRangeStart() {
+	    var day = props.day,
+	        startDate = props.startDate,
+	        endDate = props.endDate;
+
+	    if (!startDate || !endDate) {
+	      return false;
+	    }
+	    return isSameDay(startDate, day);
+	  };
+
+	  var isRangeEnd = function isRangeEnd() {
+	    var day = props.day,
+	        startDate = props.startDate,
+	        endDate = props.endDate;
+
+	    if (!startDate || !endDate) {
+	      return false;
+	    }
+	    return isSameDay(endDate, day);
+	  };
+
+	  var isWeekend = function isWeekend() {
+	    var weekday = (0, _date_utils.getDay)(props.day);
+	    return weekday === 0 || weekday === 6;
+	  };
+
+	  var isOutsideMonth = function isOutsideMonth() {
+	    return props.month !== undefined && props.month !== (0, _date_utils.getMonth)(props.day);
+	  };
+
+	  var getClassNames = function getClassNames(date) {
+	    var dayClassName = props.dayClassName ? props.dayClassName(date) : undefined;
+	    return (0, _classnames2.default)('react-datepicker__day', dayClassName, 'react-datepicker__day--' + (0, _date_utils.getDayOfWeekCode)(props.day), {
+	      'react-datepicker__day--disabled': isDisabled(),
+	      'react-datepicker__day--selected': isSameDay(props.selected),
+	      'react-datepicker__day--keyboard-selected': isKeyboardSelected(),
+	      'react-datepicker__day--range-start': isRangeStart(),
+	      'react-datepicker__day--range-end': isRangeEnd(),
+	      'react-datepicker__day--in-range': isInRange(),
+	      'react-datepicker__day--in-selecting-range': isInSelectingRange(),
+	      'react-datepicker__day--selecting-range-start': isSelectingRangeStart(),
+	      'react-datepicker__day--selecting-range-end': isSelectingRangeEnd(),
+	      'react-datepicker__day--today': isSameDay((0, _date_utils.now)(props.utcOffset)),
+	      'react-datepicker__day--weekend': isWeekend(),
+	      'react-datepicker__day--outside-month': isOutsideMonth()
+	    }, getHighLightedClass('react-datepicker__day--highlighted'));
+	  };
+
+	  return _react2.default.createElement(
+	    'div',
+	    {
+	      key: props.key,
+	      className: getClassNames(props.day),
+	      onClick: handleClick,
+	      onMouseEnter: handleMouseEnter,
+	      'aria-label': 'day-' + (0, _date_utils.getDate)(props.day),
+	      role: 'option' },
+	    (0, _date_utils.getDate)(props.day)
+	  );
+	};
+
+	Day.prototype.propTypes = {
 	  day: _propTypes2.default.object.isRequired,
 	  dayClassName: _propTypes2.default.func,
 	  endDate: _propTypes2.default.object,
 	  highlightDates: _propTypes2.default.array,
 	  inline: _propTypes2.default.bool,
 	  month: _propTypes2.default.number,
+	  key: _propTypes2.default.number,
 	  onClick: _propTypes2.default.func,
 	  onMouseEnter: _propTypes2.default.func,
 	  preSelection: _propTypes2.default.object,
@@ -57685,6 +57675,7 @@
 	  startDate: _propTypes2.default.object,
 	  utcOffset: _propTypes2.default.number
 	};
+
 	exports.default = Day;
 
 /***/ }),
