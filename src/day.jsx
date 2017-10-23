@@ -11,7 +11,9 @@ import {
   isSameDay,
   isDayDisabled,
   isDayInRange,
-  getDayOfWeekCode
+  getDayOfWeekCode,
+  compareArrays,
+  compareDates
 } from './date_utils'
 
 export default class Day extends React.Component {
@@ -34,9 +36,10 @@ export default class Day extends React.Component {
   }
 
   shouldComponentUpdate (nextProps) {
-    return !this.props.day.isSame(nextProps.day) ||
+    return compareDates(this.props.day, nextProps.day) ||
+      compareDates(this.props.selected, nextProps.selected) ||
       this.props.dayClassName !== nextProps.dayClassName ||
-      this.props.highlightDates !== nextProps.highlightDates ||
+      compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
       this.props.inline !== nextProps.inline ||
       this.props.month !== nextProps.month ||
       this.props.utcOffset !== nextProps.utcOffset

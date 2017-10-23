@@ -34,10 +34,10 @@ export default class Week extends React.Component {
   shouldComponentUpdate (nextProps) {
     return !this.props.day.isSame(nextProps.day) ||
       this.props.month !== nextProps.month ||
-      utils.checkDates(this.props.minDate, nextProps.minDate) ||
-      utils.checkDates(this.props.maxDate, nextProps.maxDate) ||
-      utils.checkDates(this.props.selected, nextProps.selected) ||
-      utils.checkDates(this.props.startDate, nextProps.startDate) ||
+      utils.compareDates(this.props.minDate, nextProps.minDate) ||
+      utils.compareDates(this.props.maxDate, nextProps.maxDate) ||
+      utils.compareDates(this.props.selected, nextProps.selected) ||
+      utils.compareDates(this.props.startDate, nextProps.startDate) ||
       this.props.dayClassName !== nextProps.dayClassName ||
       utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
       this.props.inline !== nextProps.inline ||

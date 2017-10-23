@@ -35,6 +35,21 @@ export default class Month extends React.Component {
     utcOffset: PropTypes.number
   }
 
+  shouldComponentUpdate (nextProps) {
+    return !this.props.day.isSame(nextProps.day) ||
+      utils.compareDates(this.props.minDate, nextProps.minDate) ||
+      utils.compareDates(this.props.maxDate, nextProps.maxDate) ||
+      utils.compareDates(this.props.selected, nextProps.selected) ||
+      utils.compareDates(this.props.startDate, nextProps.startDate) ||
+      this.props.dayClassName !== nextProps.dayClassName ||
+      utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
+      this.props.inline !== nextProps.inline ||
+      this.props.fixedHeight !== nextProps.fixedHeight ||
+      this.props.showWeekNumbers !== nextProps.showWeekNumbers ||
+      this.props.peekNextMonth !== nextProps.peekNextMonth ||
+      this.props.utcOffset !== nextProps.utcOffset
+  }
+
   handleDayClick = (day, event) => {
     if (this.props.onDayClick) {
       this.props.onDayClick(day, event)
