@@ -2,7 +2,7 @@
   "author": "HackerOne",
   "name": "@nemo.travel/react-datepicker",
   "description": "A simple and reusable datepicker component for React",
-  "version": "0.57.4",
+  "version": "0.57.5",
   "license": "MIT",
   "homepage": "https://github.com/Hacker0x01/react-datepicker",
   "main": "dist/react-datepicker.min.js",
@@ -75,10 +75,10 @@
     "lodash": "^4.17.4",
     "mocha": "^3.2.0",
     "node-sass": "^4.5.0",
-    "react": "^15.5.4",
+    "react": "^16.4.1",
     "react-addons-test-utils": "^15.5.1",
     "react-docgen": "^2.13.0",
-    "react-dom": "^15.5.4",
+    "react-dom": "^16.4.1",
     "react-test-renderer": "^15.5.4",
     "react-transform-hmr": "^1.0.4",
     "sass-loader": "^4.1.1",
@@ -90,8 +90,8 @@
     "webpack-hot-middleware": "^2.16.1"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^16.0.0",
+    "react-dom": "^0.14.0 || ^16.0.0"
   },
   "dependencies": {
     "@types/react": "^16.0.36",
