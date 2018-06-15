@@ -905,7 +905,7 @@
 
 	var _example_components2 = _interopRequireDefault(_example_components);
 
-	var _hero_example = __webpack_require__(386);
+	var _hero_example = __webpack_require__(385);
 
 	var _hero_example2 = _interopRequireDefault(_hero_example);
 
@@ -1060,173 +1060,173 @@
 
 	var _default2 = _interopRequireDefault(_default);
 
-	var _code_example_component = __webpack_require__(343);
+	var _code_example_component = __webpack_require__(342);
 
 	var _code_example_component2 = _interopRequireDefault(_code_example_component);
 
-	var _custom_date_format = __webpack_require__(344);
+	var _custom_date_format = __webpack_require__(343);
 
 	var _custom_date_format2 = _interopRequireDefault(_custom_date_format);
 
-	var _custom_class_name = __webpack_require__(345);
+	var _custom_class_name = __webpack_require__(344);
 
 	var _custom_class_name2 = _interopRequireDefault(_custom_class_name);
 
-	var _custom_calendar_class_name = __webpack_require__(346);
+	var _custom_calendar_class_name = __webpack_require__(345);
 
 	var _custom_calendar_class_name2 = _interopRequireDefault(_custom_calendar_class_name);
 
-	var _custom_day_class_names = __webpack_require__(347);
+	var _custom_day_class_names = __webpack_require__(346);
 
 	var _custom_day_class_names2 = _interopRequireDefault(_custom_day_class_names);
 
-	var _placeholder_text = __webpack_require__(348);
+	var _placeholder_text = __webpack_require__(347);
 
 	var _placeholder_text2 = _interopRequireDefault(_placeholder_text);
 
-	var _specific_date_range = __webpack_require__(349);
+	var _specific_date_range = __webpack_require__(348);
 
 	var _specific_date_range2 = _interopRequireDefault(_specific_date_range);
 
-	var _locale = __webpack_require__(350);
+	var _locale = __webpack_require__(349);
 
 	var _locale2 = _interopRequireDefault(_locale);
 
-	var _exclude_dates = __webpack_require__(351);
+	var _exclude_dates = __webpack_require__(350);
 
 	var _exclude_dates2 = _interopRequireDefault(_exclude_dates);
 
-	var _highlight_dates = __webpack_require__(352);
+	var _highlight_dates = __webpack_require__(351);
 
 	var _highlight_dates2 = _interopRequireDefault(_highlight_dates);
 
-	var _highlight_dates_with_ranges = __webpack_require__(353);
+	var _highlight_dates_with_ranges = __webpack_require__(352);
 
 	var _highlight_dates_with_ranges2 = _interopRequireDefault(_highlight_dates_with_ranges);
 
-	var _include_dates = __webpack_require__(354);
+	var _include_dates = __webpack_require__(353);
 
 	var _include_dates2 = _interopRequireDefault(_include_dates);
 
-	var _filter_dates = __webpack_require__(355);
+	var _filter_dates = __webpack_require__(354);
 
 	var _filter_dates2 = _interopRequireDefault(_filter_dates);
 
-	var _disabled = __webpack_require__(356);
+	var _disabled = __webpack_require__(355);
 
 	var _disabled2 = _interopRequireDefault(_disabled);
 
-	var _disabled_keyboard_navigation = __webpack_require__(357);
+	var _disabled_keyboard_navigation = __webpack_require__(356);
 
 	var _disabled_keyboard_navigation2 = _interopRequireDefault(_disabled_keyboard_navigation);
 
-	var _clear_input = __webpack_require__(358);
+	var _clear_input = __webpack_require__(357);
 
 	var _clear_input2 = _interopRequireDefault(_clear_input);
 
-	var _on_blur_callbacks = __webpack_require__(359);
+	var _on_blur_callbacks = __webpack_require__(358);
 
 	var _on_blur_callbacks2 = _interopRequireDefault(_on_blur_callbacks);
 
-	var _configurePopper = __webpack_require__(360);
+	var _configurePopper = __webpack_require__(359);
 
 	var _configurePopper2 = _interopRequireDefault(_configurePopper);
 
-	var _date_range = __webpack_require__(361);
+	var _date_range = __webpack_require__(360);
 
 	var _date_range2 = _interopRequireDefault(_date_range);
 
-	var _tab_index = __webpack_require__(362);
+	var _tab_index = __webpack_require__(361);
 
 	var _tab_index2 = _interopRequireDefault(_tab_index);
 
-	var _year_dropdown = __webpack_require__(363);
+	var _year_dropdown = __webpack_require__(362);
 
 	var _year_dropdown2 = _interopRequireDefault(_year_dropdown);
 
-	var _month_dropdown = __webpack_require__(364);
+	var _month_dropdown = __webpack_require__(363);
 
 	var _month_dropdown2 = _interopRequireDefault(_month_dropdown);
 
-	var _year_select_dropdown = __webpack_require__(365);
+	var _year_select_dropdown = __webpack_require__(364);
 
 	var _year_select_dropdown2 = _interopRequireDefault(_year_select_dropdown);
 
-	var _today = __webpack_require__(366);
+	var _today = __webpack_require__(365);
 
 	var _today2 = _interopRequireDefault(_today);
 
-	var _timezone_date = __webpack_require__(367);
+	var _timezone_date = __webpack_require__(366);
 
 	var _timezone_date2 = _interopRequireDefault(_timezone_date);
 
-	var _inline = __webpack_require__(368);
+	var _inline = __webpack_require__(367);
 
 	var _inline2 = _interopRequireDefault(_inline);
 
-	var _open_to_date = __webpack_require__(369);
+	var _open_to_date = __webpack_require__(368);
 
 	var _open_to_date2 = _interopRequireDefault(_open_to_date);
 
-	var _fixed_calendar = __webpack_require__(370);
+	var _fixed_calendar = __webpack_require__(369);
 
 	var _fixed_calendar2 = _interopRequireDefault(_fixed_calendar);
 
-	var _week_numbers = __webpack_require__(371);
+	var _week_numbers = __webpack_require__(370);
 
 	var _week_numbers2 = _interopRequireDefault(_week_numbers);
 
-	var _custom_input = __webpack_require__(372);
+	var _custom_input = __webpack_require__(371);
 
 	var _custom_input2 = _interopRequireDefault(_custom_input);
 
-	var _multi_month = __webpack_require__(373);
+	var _multi_month = __webpack_require__(372);
 
 	var _multi_month2 = _interopRequireDefault(_multi_month);
 
-	var _multi_month_drp = __webpack_require__(374);
+	var _multi_month_drp = __webpack_require__(373);
 
 	var _multi_month_drp2 = _interopRequireDefault(_multi_month_drp);
 
-	var _children = __webpack_require__(375);
+	var _children = __webpack_require__(374);
 
 	var _children2 = _interopRequireDefault(_children);
 
-	var _portal = __webpack_require__(376);
+	var _portal = __webpack_require__(375);
 
 	var _portal2 = _interopRequireDefault(_portal);
 
-	var _inline_portal = __webpack_require__(377);
+	var _inline_portal = __webpack_require__(376);
 
 	var _inline_portal2 = _interopRequireDefault(_inline_portal);
 
-	var _raw_change = __webpack_require__(378);
+	var _raw_change = __webpack_require__(377);
 
 	var _raw_change2 = _interopRequireDefault(_raw_change);
 
-	var _show_time = __webpack_require__(379);
+	var _show_time = __webpack_require__(378);
 
 	var _show_time2 = _interopRequireDefault(_show_time);
 
-	var _exclude_times = __webpack_require__(380);
+	var _exclude_times = __webpack_require__(379);
 
 	var _exclude_times2 = _interopRequireDefault(_exclude_times);
 
-	var _exclude_time_period = __webpack_require__(381);
+	var _exclude_time_period = __webpack_require__(380);
 
 	var _exclude_time_period2 = _interopRequireDefault(_exclude_time_period);
 
-	var _dont_close_onSelect = __webpack_require__(382);
+	var _dont_close_onSelect = __webpack_require__(381);
 
 	var _dont_close_onSelect2 = _interopRequireDefault(_dont_close_onSelect);
 
-	var _open_by_default = __webpack_require__(383);
+	var _open_by_default = __webpack_require__(382);
 
 	var _open_by_default2 = _interopRequireDefault(_open_by_default);
 
-	__webpack_require__(384);
+	__webpack_require__(383);
 
-	__webpack_require__(385);
+	__webpack_require__(384);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20248,103 +20248,9 @@
 
 /***/ }),
 /* 200 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 *
-	 * This source code is licensed under the MIT license found in the
-	 * LICENSE file in the root directory of this source tree.
-	 */
-
-	if (false) {
-	  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-	    Symbol.for &&
-	    Symbol.for('react.element')) ||
-	    0xeac7;
-
-	  var isValidElement = function(object) {
-	    return typeof object === 'object' &&
-	      object !== null &&
-	      object.$$typeof === REACT_ELEMENT_TYPE;
-	  };
-
-	  // By explicitly using `prop-types` you are opting into new development behavior.
-	  // http://fb.me/prop-types-in-prod
-	  var throwOnDirectAccess = true;
-	  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);
-	} else {
-	  // By explicitly using `prop-types` you are opting into new production behavior.
-	  // http://fb.me/prop-types-in-prod
-	  module.exports = __webpack_require__(201)();
-	}
-
-
-/***/ }),
+[386, 201],
 /* 201 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 *
-	 * This source code is licensed under the MIT license found in the
-	 * LICENSE file in the root directory of this source tree.
-	 */
-
-	'use strict';
-
-	var emptyFunction = __webpack_require__(7);
-	var invariant = __webpack_require__(5);
-	var ReactPropTypesSecret = __webpack_require__(202);
-
-	module.exports = function() {
-	  function shim(props, propName, componentName, location, propFullName, secret) {
-	    if (secret === ReactPropTypesSecret) {
-	      // It is still safe when called from React.
-	      return;
-	    }
-	    invariant(
-	      false,
-	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-	      'Use PropTypes.checkPropTypes() to call them. ' +
-	      'Read more at http://fb.me/use-check-prop-types'
-	    );
-	  };
-	  shim.isRequired = shim;
-	  function getShim() {
-	    return shim;
-	  };
-	  // Important!
-	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
-	  var ReactPropTypes = {
-	    array: shim,
-	    bool: shim,
-	    func: shim,
-	    number: shim,
-	    object: shim,
-	    string: shim,
-	    symbol: shim,
-
-	    any: shim,
-	    arrayOf: getShim,
-	    element: shim,
-	    instanceOf: getShim,
-	    node: shim,
-	    objectOf: getShim,
-	    oneOf: getShim,
-	    oneOfType: getShim,
-	    shape: getShim,
-	    exact: getShim
-	  };
-
-	  ReactPropTypes.checkPropTypes = emptyFunction;
-	  ReactPropTypes.PropTypes = ReactPropTypes;
-
-	  return ReactPropTypes;
-	};
-
-
-/***/ }),
+[387, 202],
 /* 202 */
 /***/ (function(module, exports) {
 
@@ -39085,86 +38991,110 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Arrow = exports.Popper = exports.Target = exports.Manager = undefined;
+	Object.defineProperty(exports, '__esModule', { value: true });
 
-	var _Manager2 = __webpack_require__(338);
+	function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-	var _Manager3 = _interopRequireDefault(_Manager2);
+	var react = __webpack_require__(2);
+	var PropTypes = _interopDefault(__webpack_require__(338));
+	var PopperJS = _interopDefault(__webpack_require__(341));
 
-	var _Target2 = __webpack_require__(339);
+	var classCallCheck = function (instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	};
 
-	var _Target3 = _interopRequireDefault(_Target2);
+	var createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];
+	      descriptor.enumerable = descriptor.enumerable || false;
+	      descriptor.configurable = true;
+	      if ("value" in descriptor) descriptor.writable = true;
+	      Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }
 
-	var _Popper2 = __webpack_require__(340);
+	  return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+	    if (staticProps) defineProperties(Constructor, staticProps);
+	    return Constructor;
+	  };
+	}();
 
-	var _Popper3 = _interopRequireDefault(_Popper2);
+	var _extends = Object.assign || function (target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i];
 
-	var _Arrow2 = __webpack_require__(342);
+	    for (var key in source) {
+	      if (Object.prototype.hasOwnProperty.call(source, key)) {
+	        target[key] = source[key];
+	      }
+	    }
+	  }
 
-	var _Arrow3 = _interopRequireDefault(_Arrow2);
+	  return target;
+	};
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	var inherits = function (subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+	  }
 
-	exports.Manager = _Manager3.default;
-	exports.Target = _Target3.default;
-	exports.Popper = _Popper3.default;
-	exports.Arrow = _Arrow3.default;
+	  subClass.prototype = Object.create(superClass && superClass.prototype, {
+	    constructor: {
+	      value: subClass,
+	      enumerable: false,
+	      writable: true,
+	      configurable: true
+	    }
+	  });
+	  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	};
 
-/***/ }),
-/* 338 */
-/***/ (function(module, exports, __webpack_require__) {
+	var objectWithoutProperties = function (obj, keys) {
+	  var target = {};
 
-	'use strict';
+	  for (var i in obj) {
+	    if (keys.indexOf(i) >= 0) continue;
+	    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+	    target[i] = obj[i];
+	  }
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
+	  return target;
+	};
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	var possibleConstructorReturn = function (self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }
 
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _propTypes = __webpack_require__(200);
-
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+	};
 
 	var Manager = function (_Component) {
-	  _inherits(Manager, _Component);
+	  inherits(Manager, _Component);
 
 	  function Manager() {
 	    var _ref;
 
 	    var _temp, _this, _ret;
 
-	    _classCallCheck(this, Manager);
+	    classCallCheck(this, Manager);
 
 	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
 	      args[_key] = arguments[_key];
 	    }
 
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Manager.__proto__ || Object.getPrototypeOf(Manager)).call.apply(_ref, [this].concat(args))), _this), _this._setTargetNode = function (node) {
+	    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Manager.__proto__ || Object.getPrototypeOf(Manager)).call.apply(_ref, [this].concat(args))), _this), _this._setTargetNode = function (node) {
 	      _this._targetNode = node;
 	    }, _this._getTargetNode = function () {
 	      return _this._targetNode;
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	    }, _temp), possibleConstructorReturn(_this, _ret);
 	  }
 
-	  _createClass(Manager, [{
+	  createClass(Manager, [{
 	    key: 'getChildContext',
 	    value: function getChildContext() {
 	      return {
@@ -39180,61 +39110,35 @@
 	      var _props = this.props,
 	          tag = _props.tag,
 	          children = _props.children,
-	          restProps = _objectWithoutProperties(_props, ['tag', 'children']);
+	          restProps = objectWithoutProperties(_props, ['tag', 'children']);
 
 	      if (tag !== false) {
-	        return (0, _react.createElement)(tag, restProps, children);
+	        return react.createElement(tag, restProps, children);
 	      } else {
 	        return children;
 	      }
 	    }
 	  }]);
-
 	  return Manager;
-	}(_react.Component);
+	}(react.Component);
 
 	Manager.childContextTypes = {
-	  popperManager: _propTypes2.default.object.isRequired
+	  popperManager: PropTypes.object.isRequired
 	};
 	Manager.propTypes = {
-	  tag: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.bool])
+	  tag: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+	  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
 	};
 	Manager.defaultProps = {
 	  tag: 'div'
 	};
-	exports.default = Manager;
-
-/***/ }),
-/* 339 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _propTypes = __webpack_require__(200);
-
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	var Target = function Target(props, context) {
 	  var _props$component = props.component,
 	      component = _props$component === undefined ? 'div' : _props$component,
 	      innerRef = props.innerRef,
 	      children = props.children,
-	      restProps = _objectWithoutProperties(props, ['component', 'innerRef', 'children']);
-
+	      restProps = objectWithoutProperties(props, ['component', 'innerRef', 'children']);
 	  var popperManager = context.popperManager;
 
 	  var targetRef = function targetRef(node) {
@@ -39257,76 +39161,43 @@
 	    componentProps.innerRef = targetRef;
 	  }
 
-	  return (0, _react.createElement)(component, componentProps, children);
+	  return react.createElement(component, componentProps, children);
 	};
 
 	Target.contextTypes = {
-	  popperManager: _propTypes2.default.object.isRequired
+	  popperManager: PropTypes.object.isRequired
 	};
 
 	Target.propTypes = {
-	  component: _propTypes2.default.oneOfType([_propTypes2.default.node, _propTypes2.default.func]),
-	  innerRef: _propTypes2.default.func,
-	  children: _propTypes2.default.oneOfType([_propTypes2.default.node, _propTypes2.default.func])
+	  component: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+	  innerRef: PropTypes.func,
+	  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
 	};
 
-	exports.default = Target;
-
-/***/ }),
-/* 340 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _propTypes = __webpack_require__(200);
-
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-
-	var _popper = __webpack_require__(341);
-
-	var _popper2 = _interopRequireDefault(_popper);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	var placements = PopperJS.placements;
 
 	var Popper = function (_Component) {
-	  _inherits(Popper, _Component);
+	  inherits(Popper, _Component);
 
 	  function Popper() {
 	    var _ref;
 
 	    var _temp, _this, _ret;
 
-	    _classCallCheck(this, Popper);
+	    classCallCheck(this, Popper);
 
 	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
 	      args[_key] = arguments[_key];
 	    }
 
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Popper.__proto__ || Object.getPrototypeOf(Popper)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _this._setArrowNode = function (node) {
+	    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Popper.__proto__ || Object.getPrototypeOf(Popper)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _this._setArrowNode = function (node) {
 	      _this._arrowNode = node;
 	    }, _this._getTargetNode = function () {
+	      if (_this.props.target) {
+	        return _this.props.target;
+	      } else if (!_this.context.popperManager || !_this.context.popperManager.getTargetNode()) {
+	        throw new Error('Target missing. Popper must be given a target from the Popper Manager, or as a prop.');
+	      }
 	      return _this.context.popperManager.getTargetNode();
 	    }, _this._getOffsets = function (data) {
 	      return Object.keys(data.offsets).map(function (key) {
@@ -39350,10 +39221,8 @@
 	    }, _this._getPopperStyle = function () {
 	      var data = _this.state.data;
 
-	      // If Popper isn't instantiated, hide the popperElement
-	      // to avoid flash of unstyled content
 
-	      if (!data) {
+	      if (!_this._popper || !data) {
 	        return {
 	          position: 'absolute',
 	          pointerEvents: 'none',
@@ -39361,14 +39230,8 @@
 	        };
 	      }
 
-	      var _data$offsets$popper = data.offsets.popper,
-	          top = _data$offsets$popper.top,
-	          left = _data$offsets$popper.left,
-	          position = _data$offsets$popper.position;
-
-
 	      return _extends({
-	        position: position
+	        position: data.offsets.popper.position
 	      }, data.styles);
 	    }, _this._getPopperPlacement = function () {
 	      return _this.state.data ? _this.state.data.placement : undefined;
@@ -39384,10 +39247,22 @@
 
 	        return { top: top, left: left };
 	      }
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	    }, _this._handlePopperRef = function (node) {
+	      _this._popperNode = node;
+	      if (node) {
+	        _this._createPopper();
+	      } else {
+	        _this._destroyPopper();
+	      }
+	      if (_this.props.innerRef) {
+	        _this.props.innerRef(node);
+	      }
+	    }, _this._scheduleUpdate = function () {
+	      _this._popper && _this._popper.scheduleUpdate();
+	    }, _temp), possibleConstructorReturn(_this, _ret);
 	  }
 
-	  _createClass(Popper, [{
+	  createClass(Popper, [{
 	    key: 'getChildContext',
 	    value: function getChildContext() {
 	      return {
@@ -39400,13 +39275,12 @@
 	  }, {
 	    key: 'componentDidUpdate',
 	    value: function componentDidUpdate(lastProps) {
-	      if (lastProps.placement !== this.props.placement || lastProps.eventsEnabled !== this.props.eventsEnabled) {
+	      if (lastProps.placement !== this.props.placement || lastProps.eventsEnabled !== this.props.eventsEnabled || lastProps.target !== this.props.target) {
 	        this._destroyPopper();
 	        this._createPopper();
 	      }
-
 	      if (lastProps.children !== this.props.children) {
-	        this._popper.scheduleUpdate();
+	        this._scheduleUpdate();
 	      }
 	    }
 	  }, {
@@ -39417,30 +39291,33 @@
 	  }, {
 	    key: '_createPopper',
 	    value: function _createPopper() {
+	      var _this2 = this;
+
 	      var _props = this.props,
 	          placement = _props.placement,
-	          eventsEnabled = _props.eventsEnabled;
+	          eventsEnabled = _props.eventsEnabled,
+	          positionFixed = _props.positionFixed;
 
 	      var modifiers = _extends({}, this.props.modifiers, {
 	        applyStyle: { enabled: false },
 	        updateState: this._updateStateModifier
 	      });
-
 	      if (this._arrowNode) {
-	        modifiers.arrow = {
+	        modifiers.arrow = _extends({}, this.props.modifiers.arrow || {}, {
 	          element: this._arrowNode
-	        };
+	        });
 	      }
-
-	      this._popper = new _popper2.default(this._getTargetNode(), this._node, {
+	      this._popper = new PopperJS(this._getTargetNode(), this._popperNode, {
 	        placement: placement,
+	        positionFixed: positionFixed,
 	        eventsEnabled: eventsEnabled,
 	        modifiers: modifiers
 	      });
 
-	      // schedule an update to make sure everything gets positioned correctly
-	      // after being instantiated
-	      this._popper.scheduleUpdate();
+	      // TODO: look into setTimeout scheduleUpdate call, without it, the popper will not position properly on creation
+	      setTimeout(function () {
+	        return _this2._scheduleUpdate();
+	      });
 	    }
 	  }, {
 	    key: '_destroyPopper',
@@ -39452,49 +39329,31 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
-
 	      var _props2 = this.props,
 	          component = _props2.component,
 	          innerRef = _props2.innerRef,
 	          placement = _props2.placement,
 	          eventsEnabled = _props2.eventsEnabled,
+	          positionFixed = _props2.positionFixed,
 	          modifiers = _props2.modifiers,
 	          children = _props2.children,
-	          restProps = _objectWithoutProperties(_props2, ['component', 'innerRef', 'placement', 'eventsEnabled', 'modifiers', 'children']);
+	          restProps = objectWithoutProperties(_props2, ['component', 'innerRef', 'placement', 'eventsEnabled', 'positionFixed', 'modifiers', 'children']);
 
-	      var popperRef = function popperRef(node) {
-	        _this2._node = node;
-	        if (node) {
-	          _this2._createPopper();
-	        } else {
-	          _this2._destroyPopper();
-	        }
-	        if (typeof innerRef === 'function') {
-	          innerRef(node);
-	        }
-	      };
 	      var popperStyle = this._getPopperStyle();
 	      var popperPlacement = this._getPopperPlacement();
 	      var popperHide = this._getPopperHide();
 
 	      if (typeof children === 'function') {
-	        var _popperProps;
-
-	        var popperProps = (_popperProps = {
-	          ref: popperRef,
-	          style: popperStyle
-	        }, _defineProperty(_popperProps, 'data-placement', popperPlacement), _defineProperty(_popperProps, 'data-x-out-of-boundaries', popperHide), _popperProps);
-
+	        var popperProps = {
+	          ref: this._handlePopperRef,
+	          style: popperStyle,
+	          'data-placement': popperPlacement,
+	          'data-x-out-of-boundaries': popperHide
+	        };
 	        return children({
 	          popperProps: popperProps,
 	          restProps: restProps,
-	          scheduleUpdate: function scheduleUpdate() {
-	            // _createPopper will scheduleUpdate,
-	            // so calling this before this._popper exists
-	            // can be a noop.
-	            _this2._popper && _this2._popper.scheduleUpdate();
-	          }
+	          scheduleUpdate: this._scheduleUpdate
 	        });
 	      }
 
@@ -39505,47 +39364,115 @@
 	      });
 
 	      if (typeof component === 'string') {
-	        componentProps.ref = popperRef;
+	        componentProps.ref = this._handlePopperRef;
 	      } else {
-	        componentProps.innerRef = popperRef;
+	        componentProps.innerRef = this._handlePopperRef;
 	      }
 
-	      return (0, _react.createElement)(component, componentProps, children);
+	      return react.createElement(component, componentProps, children);
 	    }
 	  }]);
-
 	  return Popper;
-	}(_react.Component);
+	}(react.Component);
 
 	Popper.contextTypes = {
-	  popperManager: _propTypes2.default.object.isRequired
+	  popperManager: PropTypes.object
 	};
 	Popper.childContextTypes = {
-	  popper: _propTypes2.default.object.isRequired
+	  popper: PropTypes.object.isRequired
 	};
 	Popper.propTypes = {
-	  component: _propTypes2.default.oneOfType([_propTypes2.default.node, _propTypes2.default.func]),
-	  innerRef: _propTypes2.default.func,
-	  placement: _propTypes2.default.oneOf(_popper2.default.placements),
-	  eventsEnabled: _propTypes2.default.bool,
-	  modifiers: _propTypes2.default.object,
-	  children: _propTypes2.default.oneOfType([_propTypes2.default.node, _propTypes2.default.func])
+	  component: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+	  innerRef: PropTypes.func,
+	  placement: PropTypes.oneOf(placements),
+	  eventsEnabled: PropTypes.bool,
+	  positionFixed: PropTypes.bool,
+	  modifiers: PropTypes.object,
+	  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+	  target: PropTypes.oneOfType([
+	  // the following check is needed for SSR
+	  PropTypes.instanceOf(typeof Element !== 'undefined' ? Element : Object), PropTypes.shape({
+	    getBoundingClientRect: PropTypes.func.isRequired,
+	    clientWidth: PropTypes.number.isRequired,
+	    clientHeight: PropTypes.number.isRequired
+	  })])
 	};
 	Popper.defaultProps = {
 	  component: 'div',
 	  placement: 'bottom',
 	  eventsEnabled: true,
+	  positionFixed: false,
 	  modifiers: {}
 	};
-	exports.default = Popper;
+
+	var Arrow = function Arrow(props, context) {
+	  var _props$component = props.component,
+	      component = _props$component === undefined ? 'span' : _props$component,
+	      innerRef = props.innerRef,
+	      children = props.children,
+	      restProps = objectWithoutProperties(props, ['component', 'innerRef', 'children']);
+	  var popper = context.popper;
+
+	  var arrowRef = function arrowRef(node) {
+	    popper.setArrowNode(node);
+	    if (typeof innerRef === 'function') {
+	      innerRef(node);
+	    }
+	  };
+	  var arrowStyle = popper.getArrowStyle();
+
+	  if (typeof children === 'function') {
+	    var arrowProps = {
+	      ref: arrowRef,
+	      style: arrowStyle
+	    };
+	    return children({ arrowProps: arrowProps, restProps: restProps });
+	  }
+
+	  var componentProps = _extends({}, restProps, {
+	    style: _extends({}, arrowStyle, restProps.style)
+	  });
+
+	  if (typeof component === 'string') {
+	    componentProps.ref = arrowRef;
+	  } else {
+	    componentProps.innerRef = arrowRef;
+	  }
+
+	  return react.createElement(component, componentProps, children);
+	};
+
+	Arrow.contextTypes = {
+	  popper: PropTypes.object.isRequired
+	};
+
+	Arrow.propTypes = {
+	  component: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+	  innerRef: PropTypes.func,
+	  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
+	};
+
+	exports.Manager = Manager;
+	exports.Target = Target;
+	exports.Popper = Popper;
+	exports.placements = placements;
+	exports.Arrow = Arrow;
+	//# sourceMappingURL=react-popper.js.map
+
 
 /***/ }),
+/* 338 */
+[386, 339],
+/* 339 */
+[387, 340],
+/* 340 */
+202,
 /* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**!
 	 * @fileOverview Kickass library to create and place poppers near their reference elements.
-	 * @version 1.12.9
+	 * @version 1.14.3
 	 * @license
 	 * Copyright (c) 2016 Federico Zivolo and contributors
 	 *
@@ -39574,6 +39501,7 @@
 	}(this, (function () { 'use strict';
 
 	var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
+
 	var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
 	var timeoutDuration = 0;
 	for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
@@ -39693,11 +39621,31 @@
 	      overflowX = _getStyleComputedProp.overflowX,
 	      overflowY = _getStyleComputedProp.overflowY;
 
-	  if (/(auto|scroll)/.test(overflow + overflowY + overflowX)) {
+	  if (/(auto|scroll|overlay)/.test(overflow + overflowY + overflowX)) {
 	    return element;
 	  }
 
 	  return getScrollParent(getParentNode(element));
+	}
+
+	var isIE11 = isBrowser && !!(window.MSInputMethodContext && document.documentMode);
+	var isIE10 = isBrowser && /MSIE 10/.test(navigator.userAgent);
+
+	/**
+	 * Determines if the browser is Internet Explorer
+	 * @method
+	 * @memberof Popper.Utils
+	 * @param {Number} version to check
+	 * @returns {Boolean} isIE
+	 */
+	function isIE(version) {
+	  if (version === 11) {
+	    return isIE11;
+	  }
+	  if (version === 10) {
+	    return isIE10;
+	  }
+	  return isIE11 || isIE10;
 	}
 
 	/**
@@ -39708,16 +39656,23 @@
 	 * @returns {Element} offset parent
 	 */
 	function getOffsetParent(element) {
+	  if (!element) {
+	    return document.documentElement;
+	  }
+
+	  var noOffsetParent = isIE(10) ? document.body : null;
+
 	  // NOTE: 1 DOM access here
-	  var offsetParent = element && element.offsetParent;
+	  var offsetParent = element.offsetParent;
+	  // Skip hidden elements which don't have an offsetParent
+	  while (offsetParent === noOffsetParent && element.nextElementSibling) {
+	    offsetParent = (element = element.nextElementSibling).offsetParent;
+	  }
+
 	  var nodeName = offsetParent && offsetParent.nodeName;
 
 	  if (!nodeName || nodeName === 'BODY' || nodeName === 'HTML') {
-	    if (element) {
-	      return element.ownerDocument.documentElement;
-	    }
-
-	    return document.documentElement;
+	    return element ? element.ownerDocument.documentElement : document.documentElement;
 	  }
 
 	  // .offsetParent will return the closest TD or TABLE in case
@@ -39859,29 +39814,14 @@
 	  return parseFloat(styles['border' + sideA + 'Width'], 10) + parseFloat(styles['border' + sideB + 'Width'], 10);
 	}
 
-	/**
-	 * Tells if you are running Internet Explorer 10
-	 * @method
-	 * @memberof Popper.Utils
-	 * @returns {Boolean} isIE10
-	 */
-	var isIE10 = undefined;
-
-	var isIE10$1 = function () {
-	  if (isIE10 === undefined) {
-	    isIE10 = navigator.appVersion.indexOf('MSIE 10') !== -1;
-	  }
-	  return isIE10;
-	};
-
 	function getSize(axis, body, html, computedStyle) {
-	  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE10$1() ? html['offset' + axis] + computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')] + computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')] : 0);
+	  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE(10) ? html['offset' + axis] + computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')] + computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')] : 0);
 	}
 
 	function getWindowSizes() {
 	  var body = document.body;
 	  var html = document.documentElement;
-	  var computedStyle = isIE10$1() && getComputedStyle(html);
+	  var computedStyle = isIE(10) && getComputedStyle(html);
 
 	  return {
 	    height: getSize('Height', body, html, computedStyle),
@@ -39973,8 +39913,8 @@
 	  // IE10 10 FIX: Please, don't ask, the element isn't
 	  // considered in DOM in some circumstances...
 	  // This isn't reproducible in IE10 compatibility mode of IE11
-	  if (isIE10$1()) {
-	    try {
+	  try {
+	    if (isIE(10)) {
 	      rect = element.getBoundingClientRect();
 	      var scrollTop = getScroll(element, 'top');
 	      var scrollLeft = getScroll(element, 'left');
@@ -39982,10 +39922,10 @@
 	      rect.left += scrollLeft;
 	      rect.bottom += scrollTop;
 	      rect.right += scrollLeft;
-	    } catch (err) {}
-	  } else {
-	    rect = element.getBoundingClientRect();
-	  }
+	    } else {
+	      rect = element.getBoundingClientRect();
+	    }
+	  } catch (e) {}
 
 	  var result = {
 	    left: rect.left,
@@ -40017,7 +39957,9 @@
 	}
 
 	function getOffsetRectRelativeToArbitraryNode(children, parent) {
-	  var isIE10 = isIE10$1();
+	  var fixedPosition = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+	  var isIE10 = isIE(10);
 	  var isHTML = parent.nodeName === 'HTML';
 	  var childrenRect = getBoundingClientRect(children);
 	  var parentRect = getBoundingClientRect(parent);
@@ -40027,6 +39969,11 @@
 	  var borderTopWidth = parseFloat(styles.borderTopWidth, 10);
 	  var borderLeftWidth = parseFloat(styles.borderLeftWidth, 10);
 
+	  // In cases where the parent is fixed, we must ignore negative scroll in offset calc
+	  if (fixedPosition && parent.nodeName === 'HTML') {
+	    parentRect.top = Math.max(parentRect.top, 0);
+	    parentRect.left = Math.max(parentRect.left, 0);
+	  }
 	  var offsets = getClientRect({
 	    top: childrenRect.top - parentRect.top - borderTopWidth,
 	    left: childrenRect.left - parentRect.left - borderLeftWidth,
@@ -40054,7 +40001,7 @@
 	    offsets.marginLeft = marginLeft;
 	  }
 
-	  if (isIE10 ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
+	  if (isIE10 && !fixedPosition ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
 	    offsets = includeScroll(offsets, parent);
 	  }
 
@@ -40062,13 +40009,15 @@
 	}
 
 	function getViewportOffsetRectRelativeToArtbitraryNode(element) {
+	  var excludeScroll = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
 	  var html = element.ownerDocument.documentElement;
 	  var relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
 	  var width = Math.max(html.clientWidth, window.innerWidth || 0);
 	  var height = Math.max(html.clientHeight, window.innerHeight || 0);
 
-	  var scrollTop = getScroll(html);
-	  var scrollLeft = getScroll(html, 'left');
+	  var scrollTop = !excludeScroll ? getScroll(html) : 0;
+	  var scrollLeft = !excludeScroll ? getScroll(html, 'left') : 0;
 
 	  var offset = {
 	    top: scrollTop - relativeOffset.top + relativeOffset.marginTop,
@@ -40100,6 +40049,26 @@
 	}
 
 	/**
+	 * Finds the first parent of an element that has a transformed property defined
+	 * @method
+	 * @memberof Popper.Utils
+	 * @argument {Element} element
+	 * @returns {Element} first transformed parent or documentElement
+	 */
+
+	function getFixedPositionOffsetParent(element) {
+	  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+	  if (!element || !element.parentElement || isIE()) {
+	    return document.documentElement;
+	  }
+	  var el = element.parentElement;
+	  while (el && getStyleComputedProperty(el, 'transform') === 'none') {
+	    el = el.parentElement;
+	  }
+	  return el || document.documentElement;
+	}
+
+	/**
 	 * Computed the boundaries limits and return them
 	 * @method
 	 * @memberof Popper.Utils
@@ -40107,16 +40076,20 @@
 	 * @param {HTMLElement} reference
 	 * @param {number} padding
 	 * @param {HTMLElement} boundariesElement - Element used to define the boundaries
+	 * @param {Boolean} fixedPosition - Is in fixed position mode
 	 * @returns {Object} Coordinates of the boundaries
 	 */
 	function getBoundaries(popper, reference, padding, boundariesElement) {
+	  var fixedPosition = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
 	  // NOTE: 1 DOM access here
+
 	  var boundaries = { top: 0, left: 0 };
-	  var offsetParent = findCommonOffsetParent(popper, reference);
+	  var offsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
 
 	  // Handle viewport case
 	  if (boundariesElement === 'viewport') {
-	    boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent);
+	    boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent, fixedPosition);
 	  } else {
 	    // Handle other cases based on DOM element used as boundaries
 	    var boundariesNode = void 0;
@@ -40131,7 +40104,7 @@
 	      boundariesNode = boundariesElement;
 	    }
 
-	    var offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent);
+	    var offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent, fixedPosition);
 
 	    // In case of HTML, we need a different computation
 	    if (boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
@@ -40232,11 +40205,14 @@
 	 * @param {Object} state
 	 * @param {Element} popper - the popper element
 	 * @param {Element} reference - the reference element (the popper will be relative to this)
+	 * @param {Element} fixedPosition - is in fixed position mode
 	 * @returns {Object} An object containing the offsets which will be applied to the popper
 	 */
 	function getReferenceOffsets(state, popper, reference) {
-	  var commonOffsetParent = findCommonOffsetParent(popper, reference);
-	  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent);
+	  var fixedPosition = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
+
+	  var commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
+	  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent, fixedPosition);
 	}
 
 	/**
@@ -40409,7 +40385,7 @@
 	  };
 
 	  // compute reference element offsets
-	  data.offsets.reference = getReferenceOffsets(this.state, this.popper, this.reference);
+	  data.offsets.reference = getReferenceOffsets(this.state, this.popper, this.reference, this.options.positionFixed);
 
 	  // compute auto placement, store placement inside the data object,
 	  // modifiers will be able to edit `placement` if needed
@@ -40419,9 +40395,12 @@
 	  // store the computed placement inside `originalPlacement`
 	  data.originalPlacement = data.placement;
 
+	  data.positionFixed = this.options.positionFixed;
+
 	  // compute the popper offsets
 	  data.offsets.popper = getPopperOffsets(this.popper, data.offsets.reference, data.placement);
-	  data.offsets.popper.position = 'absolute';
+
+	  data.offsets.popper.position = this.options.positionFixed ? 'fixed' : 'absolute';
 
 	  // run the modifiers
 	  data = runModifiers(this.modifiers, data);
@@ -40461,7 +40440,7 @@
 	  var prefixes = [false, 'ms', 'Webkit', 'Moz', 'O'];
 	  var upperProp = property.charAt(0).toUpperCase() + property.slice(1);
 
-	  for (var i = 0; i < prefixes.length - 1; i++) {
+	  for (var i = 0; i < prefixes.length; i++) {
 	    var prefix = prefixes[i];
 	    var toCheck = prefix ? '' + prefix + upperProp : property;
 	    if (typeof document.body.style[toCheck] !== 'undefined') {
@@ -40482,9 +40461,12 @@
 	  // touch DOM only if `applyStyle` modifier is enabled
 	  if (isModifierEnabled(this.modifiers, 'applyStyle')) {
 	    this.popper.removeAttribute('x-placement');
-	    this.popper.style.left = '';
 	    this.popper.style.position = '';
 	    this.popper.style.top = '';
+	    this.popper.style.left = '';
+	    this.popper.style.right = '';
+	    this.popper.style.bottom = '';
+	    this.popper.style.willChange = '';
 	    this.popper.style[getSupportedPropertyName('transform')] = '';
 	  }
 
@@ -40672,12 +40654,12 @@
 	 * @method
 	 * @memberof Popper.modifiers
 	 * @param {HTMLElement} reference - The reference element used to position the popper
-	 * @param {HTMLElement} popper - The HTML element used as popper.
+	 * @param {HTMLElement} popper - The HTML element used as popper
 	 * @param {Object} options - Popper.js options
 	 */
 	function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
 	  // compute reference element offsets
-	  var referenceOffsets = getReferenceOffsets(state, popper, reference);
+	  var referenceOffsets = getReferenceOffsets(state, popper, reference, options.positionFixed);
 
 	  // compute auto placement, store placement inside the data object,
 	  // modifiers will be able to edit `placement` if needed
@@ -40688,7 +40670,7 @@
 
 	  // Apply `position` to popper before anything else because
 	  // without the position applied we can't guarantee correct computations
-	  setStyles(popper, { position: 'absolute' });
+	  setStyles(popper, { position: options.positionFixed ? 'fixed' : 'absolute' });
 
 	  return options;
 	}
@@ -40723,11 +40705,13 @@
 	    position: popper.position
 	  };
 
-	  // floor sides to avoid blurry text
+	  // Avoid blurry text by using full pixel integers.
+	  // For pixel-perfect positioning, top/bottom prefers rounded
+	  // values, while left/right prefers floored values.
 	  var offsets = {
 	    left: Math.floor(popper.left),
-	    top: Math.floor(popper.top),
-	    bottom: Math.floor(popper.bottom),
+	    top: Math.round(popper.top),
+	    bottom: Math.round(popper.bottom),
 	    right: Math.floor(popper.right)
 	  };
 
@@ -40991,7 +40975,7 @@
 	    return data;
 	  }
 
-	  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement);
+	  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement, data.positionFixed);
 
 	  var placement = data.placement.split('-')[0];
 	  var placementOpposite = getOppositePlacement(placement);
@@ -41283,7 +41267,27 @@
 	    boundariesElement = getOffsetParent(boundariesElement);
 	  }
 
-	  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, boundariesElement);
+	  // NOTE: DOM access here
+	  // resets the popper's position so that the document size can be calculated excluding
+	  // the size of the popper element itself
+	  var transformProp = getSupportedPropertyName('transform');
+	  var popperStyles = data.instance.popper.style; // assignment to help minification
+	  var top = popperStyles.top,
+	      left = popperStyles.left,
+	      transform = popperStyles[transformProp];
+
+	  popperStyles.top = '';
+	  popperStyles.left = '';
+	  popperStyles[transformProp] = '';
+
+	  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, boundariesElement, data.positionFixed);
+
+	  // NOTE: DOM access here
+	  // restores the original style properties after the offsets have been computed
+	  popperStyles.top = top;
+	  popperStyles.left = left;
+	  popperStyles[transformProp] = transform;
+
 	  options.boundaries = boundaries;
 
 	  var order = options.priority;
@@ -41781,6 +41785,12 @@
 	  placement: 'bottom',
 
 	  /**
+	   * Set this to true if you want popper to position it self in 'fixed' mode
+	   * @prop {Boolean} positionFixed=false
+	   */
+	  positionFixed: false,
+
+	  /**
 	   * Whether events (resize, scroll) are initially enabled
 	   * @prop {Boolean} eventsEnabled=true
 	   */
@@ -42001,80 +42011,6 @@
 	  value: true
 	});
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _propTypes = __webpack_require__(200);
-
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	var Arrow = function Arrow(props, context) {
-	  var _props$component = props.component,
-	      component = _props$component === undefined ? 'span' : _props$component,
-	      innerRef = props.innerRef,
-	      children = props.children,
-	      restProps = _objectWithoutProperties(props, ['component', 'innerRef', 'children']);
-
-	  var popper = context.popper;
-
-	  var arrowRef = function arrowRef(node) {
-	    popper.setArrowNode(node);
-	    if (typeof innerRef === 'function') {
-	      innerRef(node);
-	    }
-	  };
-	  var arrowStyle = popper.getArrowStyle();
-
-	  if (typeof children === 'function') {
-	    var arrowProps = {
-	      ref: arrowRef,
-	      style: arrowStyle
-	    };
-	    return children({ arrowProps: arrowProps, restProps: restProps });
-	  }
-
-	  var componentProps = _extends({}, restProps, {
-	    style: _extends({}, arrowStyle, restProps.style)
-	  });
-
-	  if (typeof component === 'string') {
-	    componentProps.ref = arrowRef;
-	  } else {
-	    componentProps.innerRef = arrowRef;
-	  }
-
-	  return (0, _react.createElement)(component, componentProps, children);
-	};
-
-	Arrow.contextTypes = {
-	  popper: _propTypes2.default.object.isRequired
-	};
-
-	Arrow.propTypes = {
-	  component: _propTypes2.default.oneOfType([_propTypes2.default.node, _propTypes2.default.func]),
-	  innerRef: _propTypes2.default.func,
-	  children: _propTypes2.default.oneOfType([_propTypes2.default.node, _propTypes2.default.func])
-	};
-
-	exports.default = Arrow;
-
-/***/ }),
-/* 343 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(2);
@@ -42129,7 +42065,7 @@
 	exports.default = CodeExampleComponent;
 
 /***/ }),
-/* 344 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42223,7 +42159,7 @@
 	exports.default = CustomDateFormat;
 
 /***/ }),
-/* 345 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42307,7 +42243,7 @@
 	exports.default = CustomClassName;
 
 /***/ }),
-/* 346 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42391,7 +42327,7 @@
 	exports.default = CustomCalendarClassName;
 
 /***/ }),
-/* 347 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42477,7 +42413,7 @@
 	exports.default = CustomDayClassNames;
 
 /***/ }),
-/* 348 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42519,7 +42455,7 @@
 	}
 
 /***/ }),
-/* 349 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42628,7 +42564,7 @@
 	exports.default = SpecificDateRange;
 
 /***/ }),
-/* 350 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42724,7 +42660,7 @@
 	exports.default = CustomStartDate;
 
 /***/ }),
-/* 351 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42824,7 +42760,7 @@
 	exports.default = ExcludeDates;
 
 /***/ }),
-/* 352 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42925,7 +42861,7 @@
 	exports.default = highlightDates;
 
 /***/ }),
-/* 353 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43065,7 +43001,7 @@
 	exports.default = highlightDatesRanges;
 
 /***/ }),
-/* 354 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43166,7 +43102,7 @@
 	exports.default = includeDates;
 
 /***/ }),
-/* 355 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43266,7 +43202,7 @@
 	exports.default = FilterDates;
 
 /***/ }),
-/* 356 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43360,7 +43296,7 @@
 	exports.default = Disabled;
 
 /***/ }),
-/* 357 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43457,7 +43393,7 @@
 	exports.default = DisabledKeyboardNavigation;
 
 /***/ }),
-/* 358 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43542,7 +43478,7 @@
 	exports.default = ClearInput;
 
 /***/ }),
-/* 359 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43654,7 +43590,7 @@
 	exports.default = Disabled;
 
 /***/ }),
-/* 360 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43749,7 +43685,7 @@
 	exports.default = ConfigurePopper;
 
 /***/ }),
-/* 361 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43860,7 +43796,7 @@
 	exports.default = DateRange;
 
 /***/ }),
-/* 362 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43944,7 +43880,7 @@
 	exports.default = TabIndex;
 
 /***/ }),
-/* 363 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44031,7 +43967,7 @@
 	exports.default = YearDropdown;
 
 /***/ }),
-/* 364 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44115,7 +44051,7 @@
 	exports.default = MonthDropdown;
 
 /***/ }),
-/* 365 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44202,7 +44138,7 @@
 	exports.default = YearDropdown;
 
 /***/ }),
-/* 366 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44286,7 +44222,7 @@
 	exports.default = Today;
 
 /***/ }),
-/* 367 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44447,7 +44383,7 @@
 	exports.default = TimeZoneDate;
 
 /***/ }),
-/* 368 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44531,7 +44467,7 @@
 	exports.default = Inline;
 
 /***/ }),
-/* 369 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44618,7 +44554,7 @@
 	exports.default = OpenToDate;
 
 /***/ }),
-/* 370 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44707,7 +44643,7 @@
 	exports.default = FixedCalendar;
 
 /***/ }),
-/* 371 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44791,7 +44727,7 @@
 	exports.default = Default;
 
 /***/ }),
-/* 372 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44910,7 +44846,7 @@
 	exports.default = CustomInput;
 
 /***/ }),
-/* 373 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44994,7 +44930,7 @@
 	exports.default = MultiMonth;
 
 /***/ }),
-/* 374 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45079,7 +45015,7 @@
 	exports.default = MultiMonthDrp;
 
 /***/ }),
-/* 375 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45170,7 +45106,7 @@
 	exports.default = Children;
 
 /***/ }),
-/* 376 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45254,7 +45190,7 @@
 	exports.default = WithPortal;
 
 /***/ }),
-/* 377 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45349,7 +45285,7 @@
 	exports.default = InlinePortalVersion;
 
 /***/ }),
-/* 378 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45445,7 +45381,7 @@
 	exports.default = RawChanges;
 
 /***/ }),
-/* 379 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45538,7 +45474,7 @@
 	exports.default = ShowTime;
 
 /***/ }),
-/* 380 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45647,7 +45583,7 @@
 	exports.default = ExcludeTimes;
 
 /***/ }),
-/* 381 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45755,7 +45691,7 @@
 	exports.default = ExcludeTimePeriod;
 
 /***/ }),
-/* 382 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45839,7 +45775,7 @@
 	exports.default = DontCloseOnSelect;
 
 /***/ }),
-/* 383 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45923,15 +45859,15 @@
 	exports.default = OpenByDefault;
 
 /***/ }),
-/* 384 */
+/* 383 */
 /***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 384 */
+383,
 /* 385 */
-384,
-/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45996,6 +45932,104 @@
 	}(_react2.default.Component);
 
 	exports.default = HeroExample;
+
+/***/ }),
+/* 386 */
+/***/ (function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	if (false) {
+	  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+	    Symbol.for &&
+	    Symbol.for('react.element')) ||
+	    0xeac7;
+
+	  var isValidElement = function(object) {
+	    return typeof object === 'object' &&
+	      object !== null &&
+	      object.$$typeof === REACT_ELEMENT_TYPE;
+	  };
+
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);
+	} else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(__webpack_module_template_argument_0__)();
+	}
+
+
+/***/ }),
+/* 387 */
+/***/ (function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var emptyFunction = __webpack_require__(7);
+	var invariant = __webpack_require__(5);
+	var ReactPropTypesSecret = __webpack_require__(__webpack_module_template_argument_0__);
+
+	module.exports = function() {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    invariant(
+	      false,
+	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	      'Use PropTypes.checkPropTypes() to call them. ' +
+	      'Read more at http://fb.me/use-check-prop-types'
+	    );
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim,
+	    exact: getShim
+	  };
+
+	  ReactPropTypes.checkPropTypes = emptyFunction;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
 
 /***/ })
 /******/ ])));
