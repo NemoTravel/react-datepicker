@@ -310,12 +310,19 @@ export function getMonthInLocale (locale, date, format) {
 
 // ** Utils for some components **
 
-export function isDayDisabled (day, { minDate, maxDate, excludeDates, includeDates, filterDate } = {}) {
+export function isDayDisabled (day, { minDate, maxDate, excludeDates, includeDates, filterDate, highlightDates, onlyHighlightedDates } = {}) {
   return (minDate && day.isBefore(minDate, 'day')) ||
     (maxDate && day.isAfter(maxDate, 'day')) ||
     (excludeDates && excludeDates.some(excludeDate => isSameDay(day, excludeDate))) ||
     (includeDates && !includeDates.some(includeDate => isSameDay(day, includeDate))) ||
     (filterDate && !filterDate(day.clone())) ||
+    (
+        onlyHighlightedDates &&
+        highlightDates &&
+        highlightDates[0] &&
+        highlightDates[0]['react-datepicker__day--hasFlight'] &&
+        !highlightDates[0]['react-datepicker__day--hasFlight'].some(highlightedDate => isSameDay(day, highlightedDate))
+    ) ||
     false
 }
 

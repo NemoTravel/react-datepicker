@@ -13,6 +13,7 @@ export default class Week extends React.Component {
     filterDate: PropTypes.func,
     formatWeekNumber: PropTypes.func,
     highlightDates: PropTypes.array,
+    onlyHighlightedDates: PropTypes.bool,
     includeDates: PropTypes.array,
     inline: PropTypes.bool,
     maxDate: PropTypes.object,
@@ -39,6 +40,7 @@ export default class Week extends React.Component {
       utils.compareDates(this.props.selected, nextProps.selected) ||
       utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
       this.props.dayClassName !== nextProps.dayClassName ||
+      this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates ||
       this.props.inline !== nextProps.inline ||
       this.props.showWeekNumber !== nextProps.showWeekNumber ||
       this.props.utcOffset !== nextProps.utcOffset
@@ -94,6 +96,7 @@ export default class Week extends React.Component {
             includeDates={this.props.includeDates}
             inline={this.props.inline}
             highlightDates={this.props.highlightDates}
+            onlyHighlightedDates={this.props.onlyHighlightedDates}
             selectingDate={this.props.selectingDate}
             filterDate={this.props.filterDate}
             preSelection={this.props.preSelection}

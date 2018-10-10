@@ -72,6 +72,7 @@ export default class DatePicker extends React.Component {
     id: PropTypes.string,
     includeDates: PropTypes.array,
     inline: PropTypes.bool,
+    onlyHighlightedDates: PropTypes.bool,
     isClearable: PropTypes.bool,
     locale: PropTypes.string,
     maxDate: PropTypes.object,
@@ -414,6 +415,7 @@ export default class DatePicker extends React.Component {
         onSelect={this.handleSelect}
         onWeekSelect={this.props.onWeekSelect}
         openToDate={this.props.openToDate}
+        onlyHighlightedDates={this.props.onlyHighlightedDates}
         minDate={this.props.minDate}
         maxDate={this.props.maxDate}
         selectsStart={this.props.selectsStart}

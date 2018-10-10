@@ -16,6 +16,7 @@ export default class Month extends React.Component {
     fixedHeight: PropTypes.bool,
     formatWeekNumber: PropTypes.func,
     highlightDates: PropTypes.array,
+    onlyHighlightedDates: PropTypes.bool,
     includeDates: PropTypes.array,
     inline: PropTypes.bool,
     maxDate: PropTypes.object,
@@ -43,6 +44,7 @@ export default class Month extends React.Component {
       utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
       this.props.dayClassName !== nextProps.dayClassName ||
       this.props.inline !== nextProps.inline ||
+      this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates ||
       this.props.fixedHeight !== nextProps.fixedHeight ||
       this.props.showWeekNumbers !== nextProps.showWeekNumbers ||
       this.props.peekNextMonth !== nextProps.peekNextMonth ||
@@ -95,6 +97,7 @@ export default class Month extends React.Component {
           includeDates={this.props.includeDates}
           inline={this.props.inline}
           highlightDates={this.props.highlightDates}
+          onlyHighlightedDates={this.props.onlyHighlightedDates}
           selectingDate={this.props.selectingDate}
           filterDate={this.props.filterDate}
           preSelection={this.props.preSelection}

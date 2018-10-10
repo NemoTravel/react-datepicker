@@ -22,6 +22,7 @@ export default class Day extends React.Component {
     dayClassName: PropTypes.func,
     endDate: PropTypes.object,
     highlightDates: PropTypes.array,
+    onlyHighlightedDates: PropTypes.bool,
     inline: PropTypes.bool,
     month: PropTypes.number,
     onClick: PropTypes.func,
@@ -40,6 +41,7 @@ export default class Day extends React.Component {
       compareDates(this.props.selected, nextProps.selected) ||
       compareArrays(this.props.highlightDates, nextProps.highlightDates) ||
       this.props.dayClassName !== nextProps.dayClassName ||
+      this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates ||
       this.props.inline !== nextProps.inline ||
       this.props.month !== nextProps.month ||
       this.props.utcOffset !== nextProps.utcOffset

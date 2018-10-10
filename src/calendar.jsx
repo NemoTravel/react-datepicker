@@ -92,6 +92,7 @@ export default class Calendar extends React.Component {
     startDate: PropTypes.object,
     todayButton: PropTypes.string,
     useWeekdaysShort: PropTypes.bool,
+    onlyHighlightedDates: PropTypes.bool,
     withPortal: PropTypes.bool,
     utcOffset: PropTypes.number,
     weekLabel: PropTypes.string,
@@ -150,6 +151,7 @@ export default class Calendar extends React.Component {
       this.props.peekNextMonth !== nextProps.peekNextMonth ||
       this.props.utcOffset !== nextProps.utcOffset ||
       this.props.locale !== nextProps.locale ||
+      this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates ||
       this.props.monthsShown !== nextProps.monthsShown ||
       this.props.forceShowMonthNavigation !== nextProps.forceShowMonthNavigation ||
       this.props.showTimeSelect !== nextProps.showTimeSelect ||
@@ -376,6 +378,7 @@ export default class Calendar extends React.Component {
                 maxDate={this.props.maxDate}
                 excludeDates={this.props.excludeDates}
                 highlightDates={this.props.highlightDates}
+                onlyHighlightedDates={this.props.onlyHighlightedDates}
                 selectingDate={this.state.selectingDate}
                 includeDates={this.props.includeDates}
                 inline={this.props.inline}

@@ -92,6 +92,7 @@ export interface ReactDatePickerProps {
     minTime?: moment.Moment;
     maxTime?: moment.Moment;
     excludeTimes?: any[];
+    onlyHighlightedDates?: boolean;
 }
 declare const ReactDatePicker: React.ClassicComponentClass<ReactDatePickerProps>;
 export default ReactDatePicker;
