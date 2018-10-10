@@ -19405,6 +19405,7 @@
 	          onSelect: _this.handleSelect,
 	          onWeekSelect: _this.props.onWeekSelect,
 	          openToDate: _this.props.openToDate,
+	          onlyHighlightedDates: _this.props.onlyHighlightedDates,
 	          minDate: _this.props.minDate,
 	          maxDate: _this.props.maxDate,
 	          selectsStart: _this.props.selectsStart,
@@ -19572,6 +19573,7 @@
 	  id: _propTypes2.default.string,
 	  includeDates: _propTypes2.default.array,
 	  inline: _propTypes2.default.bool,
+	  onlyHighlightedDates: _propTypes2.default.bool,
 	  isClearable: _propTypes2.default.bool,
 	  locale: _propTypes2.default.string,
 	  maxDate: _propTypes2.default.object,
@@ -19943,6 +19945,7 @@
 	            maxDate: _this.props.maxDate,
 	            excludeDates: _this.props.excludeDates,
 	            highlightDates: _this.props.highlightDates,
+	            onlyHighlightedDates: _this.props.onlyHighlightedDates,
 	            selectingDate: _this.state.selectingDate,
 	            includeDates: _this.props.includeDates,
 	            inline: _this.props.inline,
@@ -20018,7 +20021,7 @@
 	  }, {
 	    key: 'shouldComponentUpdate',
 	    value: function shouldComponentUpdate(nextProps, nextState) {
-	      return this.props.className !== nextProps.className || (0, _date_utils.compareDates)(this.props.minDate, nextProps.minDate) || (0, _date_utils.compareDates)(this.props.openToDate, nextProps.openToDate) || (0, _date_utils.compareDates)(this.props.maxDate, nextProps.maxDate) || (0, _date_utils.compareDates)(this.props.selected, nextProps.selected) || (0, _date_utils.compareArrays)(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.fixedHeight !== nextProps.fixedHeight || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.peekNextMonth !== nextProps.peekNextMonth || this.props.utcOffset !== nextProps.utcOffset || this.props.locale !== nextProps.locale || this.props.monthsShown !== nextProps.monthsShown || this.props.forceShowMonthNavigation !== nextProps.forceShowMonthNavigation || this.props.showTimeSelect !== nextProps.showTimeSelect || this.props.timeFormat !== nextProps.timeFormat || this.props.timeIntervals !== nextProps.timeIntervals || this.props.scrollableYearDropdown !== nextProps.scrollableYearDropdown || this.props.showMonthDropdown !== nextProps.showMonthDropdown || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.showYearDropdown !== nextProps.showYearDropdown || this.props.todayButton !== nextProps.todayButton || this.props.useWeekdaysShort !== nextProps.useWeekdaysShort || this.props.withPortal !== nextProps.withPortal || this.props.weekLabel !== nextProps.weekLabel || this.props.yearDropdownItemNumber !== nextProps.yearDropdownItemNumber || (0, _date_utils.compareDates)(this.state.selectingDate, nextState.selectingDate) || (0, _date_utils.compareDates)(this.state.date, nextState.date) || (0, _date_utils.compareDates)(this.state.monthContainer, nextState.monthContainer);
+	      return this.props.className !== nextProps.className || (0, _date_utils.compareDates)(this.props.minDate, nextProps.minDate) || (0, _date_utils.compareDates)(this.props.openToDate, nextProps.openToDate) || (0, _date_utils.compareDates)(this.props.maxDate, nextProps.maxDate) || (0, _date_utils.compareDates)(this.props.selected, nextProps.selected) || (0, _date_utils.compareArrays)(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.fixedHeight !== nextProps.fixedHeight || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.peekNextMonth !== nextProps.peekNextMonth || this.props.utcOffset !== nextProps.utcOffset || this.props.locale !== nextProps.locale || this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates || this.props.monthsShown !== nextProps.monthsShown || this.props.forceShowMonthNavigation !== nextProps.forceShowMonthNavigation || this.props.showTimeSelect !== nextProps.showTimeSelect || this.props.timeFormat !== nextProps.timeFormat || this.props.timeIntervals !== nextProps.timeIntervals || this.props.scrollableYearDropdown !== nextProps.scrollableYearDropdown || this.props.showMonthDropdown !== nextProps.showMonthDropdown || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.showYearDropdown !== nextProps.showYearDropdown || this.props.todayButton !== nextProps.todayButton || this.props.useWeekdaysShort !== nextProps.useWeekdaysShort || this.props.withPortal !== nextProps.withPortal || this.props.weekLabel !== nextProps.weekLabel || this.props.yearDropdownItemNumber !== nextProps.yearDropdownItemNumber || (0, _date_utils.compareDates)(this.state.selectingDate, nextState.selectingDate) || (0, _date_utils.compareDates)(this.state.date, nextState.date) || (0, _date_utils.compareDates)(this.state.monthContainer, nextState.monthContainer);
 	    }
 	  }, {
 	    key: 'render',
@@ -20084,6 +20087,7 @@
 	  startDate: _propTypes2.default.object,
 	  todayButton: _propTypes2.default.string,
 	  useWeekdaysShort: _propTypes2.default.bool,
+	  onlyHighlightedDates: _propTypes2.default.bool,
 	  withPortal: _propTypes2.default.bool,
 	  utcOffset: _propTypes2.default.number,
 	  weekLabel: _propTypes2.default.string,
@@ -21231,13 +21235,17 @@
 	      maxDate = _ref4.maxDate,
 	      excludeDates = _ref4.excludeDates,
 	      includeDates = _ref4.includeDates,
-	      filterDate = _ref4.filterDate;
+	      filterDate = _ref4.filterDate,
+	      highlightDates = _ref4.highlightDates,
+	      onlyHighlightedDates = _ref4.onlyHighlightedDates;
 
 	  return minDate && day.isBefore(minDate, 'day') || maxDate && day.isAfter(maxDate, 'day') || excludeDates && excludeDates.some(function (excludeDate) {
 	    return isSameDay(day, excludeDate);
 	  }) || includeDates && !includeDates.some(function (includeDate) {
 	    return isSameDay(day, includeDate);
-	  }) || filterDate && !filterDate(day.clone()) || false;
+	  }) || filterDate && !filterDate(day.clone()) || onlyHighlightedDates && highlightDates && highlightDates[0] && highlightDates[0]['react-datepicker__day--hasFlight'] && !highlightDates[0]['react-datepicker__day--hasFlight'].some(function (highlightedDate) {
+	    return isSameDay(day, highlightedDate);
+	  }) || false;
 	}
 
 	function isTimeDisabled(time, disabledTimes) {
@@ -38149,6 +38157,7 @@
 	          includeDates: _this.props.includeDates,
 	          inline: _this.props.inline,
 	          highlightDates: _this.props.highlightDates,
+	          onlyHighlightedDates: _this.props.onlyHighlightedDates,
 	          selectingDate: _this.props.selectingDate,
 	          filterDate: _this.props.filterDate,
 	          preSelection: _this.props.preSelection,
@@ -38196,7 +38205,7 @@
 	  _createClass(Month, [{
 	    key: 'shouldComponentUpdate',
 	    value: function shouldComponentUpdate(nextProps) {
-	      return !this.props.day.isSame(nextProps.day) || utils.compareDates(this.props.minDate, nextProps.minDate) || utils.compareDates(this.props.maxDate, nextProps.maxDate) || utils.compareDates(this.props.selected, nextProps.selected) || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.fixedHeight !== nextProps.fixedHeight || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.peekNextMonth !== nextProps.peekNextMonth || this.props.utcOffset !== nextProps.utcOffset;
+	      return !this.props.day.isSame(nextProps.day) || utils.compareDates(this.props.minDate, nextProps.minDate) || utils.compareDates(this.props.maxDate, nextProps.maxDate) || utils.compareDates(this.props.selected, nextProps.selected) || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates || this.props.fixedHeight !== nextProps.fixedHeight || this.props.showWeekNumbers !== nextProps.showWeekNumbers || this.props.peekNextMonth !== nextProps.peekNextMonth || this.props.utcOffset !== nextProps.utcOffset;
 	    }
 	  }, {
 	    key: 'render',
@@ -38221,6 +38230,7 @@
 	  fixedHeight: _propTypes2.default.bool,
 	  formatWeekNumber: _propTypes2.default.func,
 	  highlightDates: _propTypes2.default.array,
+	  onlyHighlightedDates: _propTypes2.default.bool,
 	  includeDates: _propTypes2.default.array,
 	  inline: _propTypes2.default.bool,
 	  maxDate: _propTypes2.default.object,
@@ -38336,6 +38346,7 @@
 	          includeDates: _this.props.includeDates,
 	          inline: _this.props.inline,
 	          highlightDates: _this.props.highlightDates,
+	          onlyHighlightedDates: _this.props.onlyHighlightedDates,
 	          selectingDate: _this.props.selectingDate,
 	          filterDate: _this.props.filterDate,
 	          preSelection: _this.props.preSelection,
@@ -38353,7 +38364,7 @@
 	  _createClass(Week, [{
 	    key: 'shouldComponentUpdate',
 	    value: function shouldComponentUpdate(nextProps) {
-	      return !this.props.day.isSame(nextProps.day) || this.props.month !== nextProps.month || utils.compareDates(this.props.minDate, nextProps.minDate) || utils.compareDates(this.props.maxDate, nextProps.maxDate) || utils.compareDates(this.props.selected, nextProps.selected) || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.showWeekNumber !== nextProps.showWeekNumber || this.props.utcOffset !== nextProps.utcOffset;
+	      return !this.props.day.isSame(nextProps.day) || this.props.month !== nextProps.month || utils.compareDates(this.props.minDate, nextProps.minDate) || utils.compareDates(this.props.maxDate, nextProps.maxDate) || utils.compareDates(this.props.selected, nextProps.selected) || utils.compareArrays(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates || this.props.inline !== nextProps.inline || this.props.showWeekNumber !== nextProps.showWeekNumber || this.props.utcOffset !== nextProps.utcOffset;
 	    }
 	  }, {
 	    key: 'render',
@@ -38377,6 +38388,7 @@
 	  filterDate: _propTypes2.default.func,
 	  formatWeekNumber: _propTypes2.default.func,
 	  highlightDates: _propTypes2.default.array,
+	  onlyHighlightedDates: _propTypes2.default.bool,
 	  includeDates: _propTypes2.default.array,
 	  inline: _propTypes2.default.bool,
 	  maxDate: _propTypes2.default.object,
@@ -38607,7 +38619,7 @@
 	  _createClass(Day, [{
 	    key: 'shouldComponentUpdate',
 	    value: function shouldComponentUpdate(nextProps) {
-	      return (0, _date_utils.compareDates)(this.props.day, nextProps.day) || (0, _date_utils.compareDates)(this.props.selected, nextProps.selected) || (0, _date_utils.compareArrays)(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.inline !== nextProps.inline || this.props.month !== nextProps.month || this.props.utcOffset !== nextProps.utcOffset;
+	      return (0, _date_utils.compareDates)(this.props.day, nextProps.day) || (0, _date_utils.compareDates)(this.props.selected, nextProps.selected) || (0, _date_utils.compareArrays)(this.props.highlightDates, nextProps.highlightDates) || this.props.dayClassName !== nextProps.dayClassName || this.props.onlyHighlightedDates !== nextProps.onlyHighlightedDates || this.props.inline !== nextProps.inline || this.props.month !== nextProps.month || this.props.utcOffset !== nextProps.utcOffset;
 	    }
 	  }, {
 	    key: 'render',
@@ -38633,6 +38645,7 @@
 	  dayClassName: _propTypes2.default.func,
 	  endDate: _propTypes2.default.object,
 	  highlightDates: _propTypes2.default.array,
+	  onlyHighlightedDates: _propTypes2.default.bool,
 	  inline: _propTypes2.default.bool,
 	  month: _propTypes2.default.number,
 	  onClick: _propTypes2.default.func,
